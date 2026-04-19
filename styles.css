@@ -940,7 +940,7 @@ section {
 .designs-tabs {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--space-3);
+  gap: 15px;
   margin-bottom: var(--space-5);
 }
 
@@ -965,7 +965,8 @@ section {
 /* Category Heroes */
 .category-hero-container {
   margin-bottom: var(--space-8);
-  padding: var(--space-4);
+  padding: 30px;
+  margin-top: 50px;
   background: var(--color-terracotta-light);
   border-left: 3px solid var(--color-terracotta);
 }
@@ -981,7 +982,7 @@ section {
 .category-statement p {
   margin: 0;
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 /* ================================================
@@ -990,6 +991,10 @@ section {
 .case-hero {
   padding-top: var(--space-16);
   padding-bottom: var(--space-8);
+}
+
+.case-hero h1 {
+  margin-bottom: 40px;
 }
 
 .case-meta {
