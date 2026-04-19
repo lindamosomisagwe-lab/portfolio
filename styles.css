@@ -150,11 +150,8 @@ section {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: rgba(245, 240, 230, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.3s ease;
+  background-color: #F9F7F5;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .site-header.scrolled {

@@ -147,13 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========================================
   // Designs Gallery Tab Filtering
   // ========================================
-  const tabBtns = document.querySelectorAll('.tab-btn');
+  const tabBtns = document.querySelectorAll('.tab-btn, .nav-filter');
   const masonryItems = document.querySelectorAll('.masonry-item');
   const categoryHeroes = document.querySelectorAll('.category-statement');
 
   if (tabBtns.length > 0) {
     tabBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
         // Update active tab button
         tabBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
