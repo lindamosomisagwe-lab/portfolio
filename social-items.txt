@@ -1,0 +1,48 @@
+        <div class="masonry-item"><img src="assets/social-media/1 (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1 (2).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1 (3).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1 (4).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1 (5).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1 (6).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/1.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/10.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/11.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/12.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/13.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/14.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/15.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/16.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (2).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (3).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (4).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (5).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (6).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2 (7).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/2.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/3 (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/3 (2).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/3 (3).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/3 (4).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/3.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/4 (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/4 (2).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/4 (3).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/4 (4).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/4.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/5 (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/5 (2).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/5 (3).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/5.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/6.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/7.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/8.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><img src="assets/social-media/9.png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><video src="assets/social-media/Copy of Grey White Elegant Vintage Drama Movie Poster.mp4" autoplay loop muted playsinline></video></div>
+        <div class="masonry-item"><img src="assets/social-media/Cream & Black Elegant Welcome Landscape Poster (1).png" alt="Social Media Design" loading="lazy"></div>
+        <div class="masonry-item"><video src="assets/social-media/Mohar 1.mp4" autoplay loop muted playsinline></video></div>
+        <div class="masonry-item"><video src="assets/social-media/Mohar 2.mp4" autoplay loop muted playsinline></video></div>
+        <div class="masonry-item"><video src="assets/social-media/Mohar 3.mp4" autoplay loop muted playsinline></video></div>
+        <div class="masonry-item"><video src="assets/social-media/Pink Modern New Collection Mobile Video (3).mp4" autoplay loop muted playsinline></video></div>
+        <div class="masonry-item"><video src="assets/social-media/Pink Modern New Collection Mobile Video (4).mp4" autoplay loop muted playsinline></video></div>
+
