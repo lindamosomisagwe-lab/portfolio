@@ -144,4 +144,41 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { passive: true });
   }
 
+  // ========================================
+  // Designs Gallery Tab Filtering
+  // ========================================
+  const tabBtns = document.querySelectorAll('.tab-btn');
+  const masonryItems = document.querySelectorAll('.masonry-item');
+  const categoryHeroes = document.querySelectorAll('.category-statement');
+
+  if (tabBtns.length > 0) {
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active tab button
+        tabBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const targetCategory = btn.getAttribute('data-target');
+
+        // Update active hero statement
+        categoryHeroes.forEach(hero => {
+          hero.classList.remove('active');
+          if (hero.id === `hero-${targetCategory}`) {
+            hero.classList.add('active');
+          }
+        });
+
+        // Filter masonry items
+        masonryItems.forEach(item => {
+          const itemCategory = item.getAttribute('data-category');
+          if (targetCategory === 'all' || itemCategory === targetCategory) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+  }
+
 });

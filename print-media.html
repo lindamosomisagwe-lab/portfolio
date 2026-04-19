@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Print & Systems — Linda Sagwe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #F9F7F5;
+      --color-text: #1A1A1A;
+    }
+    body {
+      background-color: var(--color-bg);
+      color: var(--color-text);
+      font-family: 'Helvetica', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    h1, h2, h3, .nav-links a {
+      font-family: 'Playfair Display', serif;
+    }
+    .site-header {
+      padding: 2rem 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 600;
+      text-decoration: none;
+      color: var(--color-text);
+      font-family: 'Playfair Display', serif;
+    }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+    }
+    .nav-links a {
+      text-decoration: none;
+      color: var(--color-text);
+      font-size: 1.1rem;
+    }
+    .nav-links a:hover, .nav-links a.active {
+      text-decoration: underline;
+    }
+    main {
+      padding: 4rem 5%;
+    }
+    .page-title {
+      font-size: 3rem;
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    @media (max-width: 1024px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+    .grid-item {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 4px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .grid-item img, .grid-item video, .grid-item object {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-bottom: 1rem;
+      border-radius: 2px;
+    }
+    .item-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      text-transform: capitalize;
+    }
+    .item-notes {
+      font-size: 0.9rem;
+      color: #555;
+    }
+    .item-notes strong {
+      display: block;
+      margin-top: 0.5rem;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a href="index.html" class="logo">Linda Sagwe</a>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="logos.html" class="">Logos & Identity</a>
+      <a href="social-media.html" class="">Social & Motion</a>
+      <a href="print-media.html" class="active">Print & Systems</a>
+      <a href="web-design.html" class="">Web & UI</a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="page-title">Print & Systems</h1>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="assets/social-media/print-artexhibit-flyer.png" alt="artexhibit flyer" loading="lazy">
+        <h3 class="item-title">artexhibit flyer</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-dreamgirls-poster1.png" alt="dreamgirls poster1" loading="lazy">
+        <h3 class="item-title">dreamgirls poster1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-dreamgirls-poster2.png" alt="dreamgirls poster2" loading="lazy">
+        <h3 class="item-title">dreamgirls poster2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-dreamgirls-poster3.png" alt="dreamgirls poster3" loading="lazy">
+        <h3 class="item-title">dreamgirls poster3</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-dreamgirls-poster4.png" alt="dreamgirls poster4" loading="lazy">
+        <h3 class="item-title">dreamgirls poster4</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/Mozaic Brand Assignment (3).pdf" alt="ecorush ruleset">
+        <h3 class="item-title">ecorush ruleset</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-education-equity-flyer.png" alt="education equity flyer" loading="lazy">
+        <h3 class="item-title">education equity flyer</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-banner-1.png" alt="fishlist banner 1" loading="lazy">
+        <h3 class="item-title">fishlist banner 1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-banner-2.png" alt="fishlist banner 2" loading="lazy">
+        <h3 class="item-title">fishlist banner 2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-banner-3.png" alt="fishlist banner 3" loading="lazy">
+        <h3 class="item-title">fishlist banner 3</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-event-1.jpg" alt="fishlist event 1" loading="lazy">
+        <h3 class="item-title">fishlist event 1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-event-2.jpg" alt="fishlist event 2" loading="lazy">
+        <h3 class="item-title">fishlist event 2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-fishlist-event-3.jpg" alt="fishlist event 3" loading="lazy">
+        <h3 class="item-title">fishlist event 3</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-gicharani-charity-sports.png" alt="gicharani charity sports" loading="lazy">
+        <h3 class="item-title">gicharani charity sports</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-hostel-flyer-v1.png" alt="hostel flyer v1" loading="lazy">
+        <h3 class="item-title">hostel flyer v1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-hostel-flyer-v2.png" alt="hostel flyer v2" loading="lazy">
+        <h3 class="item-title">hostel flyer v2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/Mozaic Brand Assignment (3).pdf" alt="lastcode ruleset">
+        <h3 class="item-title">lastcode ruleset</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lifesmart-womensday-v1.png" alt="lifesmart womensday v1" loading="lazy">
+        <h3 class="item-title">lifesmart womensday v1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lifesmart-womensday-v2.png" alt="lifesmart womensday v2" loading="lazy">
+        <h3 class="item-title">lifesmart womensday v2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lifesmart-womensday-v3.png" alt="lifesmart womensday v3" loading="lazy">
+        <h3 class="item-title">lifesmart womensday v3</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lifesmart-womensday-v4.png" alt="lifesmart womensday v4" loading="lazy">
+        <h3 class="item-title">lifesmart womensday v4</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lindaskitchen-flyer-v1.jpg" alt="lindaskitchen flyer v1" loading="lazy">
+        <h3 class="item-title">lindaskitchen flyer v1</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-lindaskitchen-flyer-v2.jpg" alt="lindaskitchen flyer v2" loading="lazy">
+        <h3 class="item-title">lindaskitchen flyer v2</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-moviescreening-ticket.png" alt="moviescreening ticket" loading="lazy">
+        <h3 class="item-title">moviescreening ticket</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+      <div class="grid-item">
+        <img src="assets/social-media/print-prom-ticket.png" alt="prom ticket" loading="lazy">
+        <h3 class="item-title">prom ticket</h3>
+        <div class="item-notes">
+          <strong>Strategic Intent:</strong>
+          <p>[Placeholder for business strategy behind this asset]</p>
+          <strong>Operational Result:</strong>
+          <p>[Placeholder for measurable impact or logistic outcome]</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
