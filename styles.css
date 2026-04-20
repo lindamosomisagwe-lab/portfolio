@@ -126,7 +126,6 @@ h1, h2, h3, h4, .serif {
 
 h2, h3 {
   color: var(--color-teal);
-}
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
@@ -489,6 +488,7 @@ section {
   padding: 1px; /* border thickness */
   background: linear-gradient(135deg, var(--color-teal), var(--color-orange));
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   pointer-events: none;
