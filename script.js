@@ -169,13 +169,23 @@ document.addEventListener('DOMContentLoaded', () => {
           }
         });
 
-        // Filter masonry items
+        // Filter masonry items and sections
+        const sections = document.querySelectorAll('section[id]');
         masonryItems.forEach(item => {
           const itemCategory = item.getAttribute('data-category');
           if (targetCategory === 'all' || itemCategory === targetCategory) {
             item.style.display = 'block';
           } else {
             item.style.display = 'none';
+          }
+        });
+
+        // Hide/Show entire sections if filtering
+        sections.forEach(section => {
+          if (targetCategory === 'all' || section.id === targetCategory) {
+            section.style.display = 'block';
+          } else {
+            section.style.display = 'none';
           }
         });
       });
