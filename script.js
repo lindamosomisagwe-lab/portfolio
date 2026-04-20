@@ -208,7 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Handle initial load with hash
     const initialHash = window.location.hash.replace('#', '');
-    if (initialHash && ['ventures', 'roles', 'impact', 'all'].includes(initialHash)) {
+    const validCategories = ['logos', 'social-media', 'print-designs', 'all'];
+    if (initialHash && validCategories.includes(initialHash)) {
       filterByCategory(initialHash);
     }
   }
