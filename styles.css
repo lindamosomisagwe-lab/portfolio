@@ -5,14 +5,13 @@
 
 :root {
   /* Color System */
-  --color-bg: #F5F0E6;
-  --color-bg-card: #FFFDF8;
+  --color-bg: #F9F7F5;
+  --color-bg-card: #FFFFFF;
   --color-text-primary: #1A1A1A;
-  --color-text-secondary: #5A5A5A;
+  --color-text-secondary: #4A4A4A;
   --color-text-muted: #8A8A8A;
-  --color-border: rgba(26, 26, 26, 0.1);
-  --color-border-strong: rgba(26, 26, 26, 0.2);
-
+  --color-border: rgba(26, 26, 26, 0.08);
+  --space-8: 40px; /* Strategic Spacing */
   /* Accent Palette */
   --color-teal: #006D77;
   --color-teal-light: rgba(0, 109, 119, 0.08);
@@ -462,10 +461,13 @@ section {
   color: var(--color-teal);
 }
 
-.section-label.terracotta {
-  color: var(--color-terracotta);
+.media-link, .btn {
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-
 .section-label::before {
   content: '';
   display: inline-block;
@@ -929,12 +931,24 @@ section {
    ================================================ */
 .masonry-grid {
   column-count: 3;
-  column-gap: var(--space-4);
+  column-gap: 40px; /* Increased White Space */
   width: 100%;
   min-height: 0;
-  margin-top: var(--space-8);
 }
 
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 40px; /* Consistent Vertical Gap */
+}
+
+.masonry-item p {
+  font-family: var(--font-sans);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  margin-top: 12px;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.02em;
+}
 @media (min-width: 768px) {
   .masonry-grid {
     column-count: 2;
