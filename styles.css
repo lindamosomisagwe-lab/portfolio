@@ -893,7 +893,18 @@ section {
 .masonry-item video {
   width: 100%;
   display: block;
-  transition: transform 0.5s var(--ease-out);
+}
+
+/* Surgery: Remove any potential hover overlays */
+.masonry-item:hover::after,
+.masonry-item:hover .overlay,
+.masonry-item:hover .item-notes {
+  display: none !important;
+}
+
+.masonry-item {
+  position: relative;
+  transition: none !important; /* Surgery: No transitions on hover */
 }
 
 

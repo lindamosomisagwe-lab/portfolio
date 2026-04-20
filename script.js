@@ -145,51 +145,72 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ========================================
-  // Designs Gallery Tab Filtering
+  // Designs Gallery Nav Filtering
   // ========================================
-  const tabBtns = document.querySelectorAll('.tab-btn, .nav-filter');
+  const navLinksList = document.querySelectorAll('.nav-links a[data-target]');
   const masonryItems = document.querySelectorAll('.masonry-item');
   const categoryHeroes = document.querySelectorAll('.category-statement');
+  const isDesignsPage = window.location.pathname.includes('designs.html');
 
-  if (tabBtns.length > 0) {
-    tabBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.preventDefault();
-        // Update active tab button
-        tabBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
+  if (navLinksList.length > 0 && isDesignsPage) {
+    const filterByCategory = (targetCategory) => {
+      // Update active link
+      navLinksList.forEach(l => {
+        l.classList.remove('active');
+        if (l.getAttribute('data-target') === targetCategory) {
+          l.classList.add('active');
+        }
+      });
 
-        const targetCategory = btn.getAttribute('data-target');
+      // Update active hero statement
+      categoryHeroes.forEach(hero => {
+        hero.classList.remove('active');
+        if (hero.id === `hero-${targetCategory}`) {
+          hero.classList.add('active');
+        }
+      });
 
-        // Update active hero statement
-        categoryHeroes.forEach(hero => {
-          hero.classList.remove('active');
-          if (hero.id === `hero-${targetCategory}`) {
-            hero.classList.add('active');
-          }
-        });
+      // Filter masonry items and sections
+      const sections = document.querySelectorAll('section[id]');
+      masonryItems.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (targetCategory === 'all' || itemCategory === targetCategory) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
 
-        // Filter masonry items and sections
-        const sections = document.querySelectorAll('section[id]');
-        masonryItems.forEach(item => {
-          const itemCategory = item.getAttribute('data-category');
-          if (targetCategory === 'all' || itemCategory === targetCategory) {
-            item.style.display = 'block';
-          } else {
-            item.style.display = 'none';
-          }
-        });
+      // Hide/Show entire sections if filtering
+      sections.forEach(section => {
+        if (targetCategory === 'all' || section.id === targetCategory) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    };
 
-        // Hide/Show entire sections if filtering
-        sections.forEach(section => {
-          if (targetCategory === 'all' || section.id === targetCategory) {
-            section.style.display = 'block';
-          } else {
-            section.style.display = 'none';
-          }
-        });
+    navLinksList.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetCategory = link.getAttribute('data-target');
+        
+        if (targetCategory) {
+          e.preventDefault();
+          filterByCategory(targetCategory);
+          // Scroll to top
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          // Update URL hash without jumping
+          history.pushState(null, null, `#${targetCategory}`);
+        }
       });
     });
+
+    // Handle initial load with hash
+    const initialHash = window.location.hash.replace('#', '');
+    if (initialHash && ['ventures', 'roles', 'impact', 'all'].includes(initialHash)) {
+      filterByCategory(initialHash);
+    }
   }
 
 });
