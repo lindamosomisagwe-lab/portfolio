@@ -501,30 +501,7 @@ section {
   transform: translateX(4px);
 }
 
-/* ================================================
-   Operator Box
-   ================================================ */
-.operator-box {
-  position: relative;
-  padding: var(--space-5);
-  background: var(--color-bg-card);
-  border-radius: 4px;
-  z-index: 1;
-}
 
-.operator-box::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  border-radius: 4px;
-  padding: 1px; /* border thickness */
-  background: linear-gradient(135deg, var(--color-teal), var(--color-orange));
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-}
 
 /* ================================================
    Divider
