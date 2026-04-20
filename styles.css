@@ -16,38 +16,21 @@
   /* Vibrant Accent Palette */
   --color-teal: #008080;
   --color-orange: #FF8C00;
-  --color-teal-dark: #004d4d;
+  --color-orange-deep: #E67E22;
+  --color-teal-dark: #004D4D;
+  --color-orange-soft: #FDF2E9;
   --color-teal-light: rgba(0, 128, 128, 0.08);
-  --color-orange-light: rgba(255, 140, 0, 0.1);
   
   /* Typography */
   --font-serif: 'Playfair Display', 'Georgia', serif;
   --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
 
   /* Spacing Grid */
-  --space-1: 0.5rem;
-  --space-2: 0.75rem;
-  --space-3: 1rem;
-  --space-4: 1.5rem;
-  --space-5: 2rem;
-  --space-6: 3rem;
   --space-8: 40px;
-  --space-10: 5rem;
-  --space-12: 6rem;
-  --space-16: 8rem;
-  --space-20: 10rem;
-
-  /* Layout */
-  --container-width: 1120px;
-  --container-narrow: 780px;
-
-  /* Transitions */
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ================================================
-   Abstract Background Shapes
+   Abstract Background Shapes (Dynamic Gradients)
    ================================================ */
 .bg-blobs {
   position: fixed;
@@ -63,35 +46,94 @@
 
 .blob {
   position: absolute;
-  width: 1000px;
-  height: 1000px;
+  width: 1200px;
+  height: 1200px;
   border-radius: 50%;
-  opacity: 0.3; /* Increased for high impact */
-  filter: blur(40px); /* Reduced blur for sharper definition */
-  animation: pulseBlob 12s infinite alternate ease-in-out;
+  opacity: 0.2;
+  filter: blur(50px);
+  animation: fluidBlob 25s infinite alternate ease-in-out;
 }
 
 .blob-1 { 
-  top: -25%; 
-  left: -15%; 
-  background: radial-gradient(circle, var(--color-teal) 0%, transparent 65%); 
+  top: -30%; 
+  left: -20%; 
+  background: linear-gradient(135deg, var(--color-teal), var(--color-orange)); 
 }
 .blob-2 { 
-  bottom: -25%; 
-  right: -15%; 
-  background: radial-gradient(circle, var(--color-orange) 0%, transparent 65%); 
-  animation-delay: -3s; 
+  bottom: -30%; 
+  right: -20%; 
+  background: linear-gradient(135deg, var(--color-orange), var(--color-teal)); 
+  animation-delay: -5s; 
 }
 .blob-3 { 
-  top: 35%; 
-  right: -10%; 
-  background: radial-gradient(circle, var(--color-teal) 0%, transparent 65%); 
-  animation-delay: -6s; 
+  top: 40%; 
+  right: -15%; 
+  background: linear-gradient(135deg, var(--color-teal), var(--color-orange)); 
+  animation-delay: -10s; 
 }
 
-@keyframes pulseBlob {
-  0% { transform: scale(1) translate(0, 0); opacity: 0.25; }
-  100% { transform: scale(1.5) translate(150px, 80px); opacity: 0.35; }
+@keyframes fluidBlob {
+  0% { transform: scale(1) rotate(0deg) translate(0, 0); }
+  50% { transform: scale(1.1) rotate(90deg) translate(50px, 100px); }
+  100% { transform: scale(0.9) rotate(180deg) translate(-50px, 50px); }
+}
+
+/* ================================================
+   Section Color Blocking
+   ================================================ */
+.section-impact {
+  background-color: var(--color-teal-dark) !important;
+  color: #F9F7F5 !important;
+  padding: 8rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section-impact h2, .section-impact h3, .section-impact .section-label, .section-impact p {
+  color: #F9F7F5 !important;
+}
+
+.section-roles {
+  background-color: var(--color-orange-soft) !important;
+  padding: 8rem 0;
+  position: relative;
+  z-index: 1;
+}
+
+.section-gallery-spotlight {
+  background-color: var(--color-teal-dark) !important;
+  color: #fff !important;
+  padding: 6rem 0;
+  margin-top: 4rem;
+  border-radius: 4px;
+}
+
+.section-gallery-spotlight h2, .section-gallery-spotlight h3 {
+  color: #fff !important;
+}
+
+/* Bold Dividers */
+.divider-bold {
+  height: 6px;
+  width: 100%;
+  background: linear-gradient(to right, var(--color-teal), var(--color-orange));
+  margin: 0;
+  border: none;
+}
+
+/* Header States */
+.site-header.scrolled {
+  background-color: var(--color-teal) !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.site-header.scrolled .logo, 
+.site-header.scrolled .nav-links a {
+  color: #fff !important;
+}
+
+.site-header.scrolled .menu-toggle span {
+  background-color: #fff !important;
 }
 
 /* ================================================
@@ -301,15 +343,16 @@ section {
 }
 
 .filter-link:hover {
-  background-color: var(--color-orange) !important;
-  border-color: var(--color-orange) !important;
+  background-color: var(--color-orange-deep) !important;
+  border-color: var(--color-orange-deep) !important;
   color: #fff !important;
   transform: translateY(-2px);
 }
 
 .filter-link.active {
-  background-color: var(--color-orange) !important;
-  border-color: var(--color-orange) !important;
+  background-color: var(--color-orange-deep) !important;
+  border-color: var(--color-orange-deep) !important;
+  box-shadow: 0 4px 15px rgba(230, 126, 34, 0.3);
 }
 
 .filter-link.active::after {
