@@ -147,14 +147,14 @@ document.addEventListener('DOMContentLoaded', () => {
   // ========================================
   // Designs Gallery Nav Filtering
   // ========================================
-  const navLinksList = document.querySelectorAll('.nav-links a[data-target]');
+  const navLinksList = document.querySelectorAll('.nav-links a[data-target], .filter-link[data-target]');
   const masonryItems = document.querySelectorAll('.masonry-item');
   const categoryHeroes = document.querySelectorAll('.category-statement');
   const isDesignsPage = window.location.pathname.includes('designs.html');
 
   if (navLinksList.length > 0 && isDesignsPage) {
     const filterByCategory = (targetCategory) => {
-      // Update active link
+      // Update active links (both in nav and on page)
       navLinksList.forEach(l => {
         l.classList.remove('active');
         if (l.getAttribute('data-target') === targetCategory) {
@@ -212,5 +212,4 @@ document.addEventListener('DOMContentLoaded', () => {
       filterByCategory(initialHash);
     }
   }
-
 });
