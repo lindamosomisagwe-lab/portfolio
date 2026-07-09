@@ -6,7 +6,7 @@
 :root {
   /* NYT Editorial Design System */
   --color-bg: #F5F0E8; /* Ink-on-paper off-white/cream background */
-  --color-bg-card: #FAF8F5; /* Crisp lighter cream paper card background */
+  --color-bg-card: #FFFFFF; /* Pure white card background */
   --color-text-primary: #1A1A1A; /* Near-black editorial ink text */
   --color-text-secondary: #333333; /* Dark gray body copy */
   --color-text-muted: #555555; /* Muted editorial text */
@@ -119,6 +119,11 @@ html {
 
 body {
   background-color: var(--color-bg);
+  background-image: 
+    linear-gradient(rgba(26, 26, 26, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(26, 26, 26, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
   color: var(--color-text-primary);
   font-family: var(--font-sans);
   font-size: 16px;
