@@ -68,7 +68,7 @@ ${rolesItems}
 
   <section id="impact" style="margin-bottom: 6rem;">
     <h2 style="font-family: var(--font-serif); font-size: 2.5rem; margin-bottom: 1rem;">Impact & Print Designs</h2>
-    <p>This is where design meets real-world logistics. You will find the layouts behind a Kshs 200,000 fundraiser and physical collateral needed to mobilize large groups.</p>
+    <p>This is where design meets real-world logistics. You will find the layouts behind a KES 100,000 fundraiser and physical collateral needed to mobilize large groups.</p>
     <div class="masonry-grid">
 ${impactItems}
     </div>

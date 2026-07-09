@@ -4,25 +4,28 @@
    ================================================ */
 
 :root {
-  /* Color System - Updated for Vibrancy */
-  --color-bg: #F9F7F5;
-  --color-bg-card: #FFFFFF;
-  --color-text-primary: #1A1A1A;
-  --color-text-secondary: #4A4A4A;
-  --color-text-muted: #8A8A8A;
-  --color-border: rgba(26, 26, 26, 0.08);
+  /* Modern Premium Light Editorial Design System */
+  --color-bg: #FCFBF9; /* Warm off-white sand background */
+  --color-bg-card: #FFFFFF; /* Crisp white card background */
+  --color-text-primary: #0F172A; /* Deep dark navy primary text */
+  --color-text-secondary: #475569; /* Slate gray secondary text */
+  --color-text-muted: #64748B; /* Muted gray text */
+  --color-border: rgba(15, 23, 42, 0.08); /* Clean dark borders with low opacity */
   --space-8: 40px; 
   
-  /* Vibrant Accent Palette */
-  --color-teal: #008080;
-  --color-orange: #FF8C00;
-  --color-teal-dark: #004d4d;
-  --color-teal-light: rgba(0, 128, 128, 0.08);
-  --color-orange-light: rgba(255, 140, 0, 0.1);
+  /* Rich Editorial Accent Palette */
+  --color-teal: #0D9488; /* Elegant deep teal */
+  --color-orange: #D97706; /* Rich warm amber */
+  --color-amber: #B45309;
+  --color-teal-dark: #134E4A;
+  --color-teal-light: rgba(13, 148, 136, 0.05);
+  --color-orange-light: rgba(217, 119, 6, 0.05);
+  --color-terracotta: #C2410C;
+  --color-terracotta-light: rgba(194, 65, 12, 0.05);
   
   /* Typography */
-  --font-serif: 'Playfair Display', 'Georgia', serif;
-  --font-sans: 'Inter', 'Helvetica Neue', sans-serif;
+  --font-serif: 'DM Sans', 'Inter', sans-serif; /* Clean, modern geometric headings */
+  --font-sans: 'Inter', sans-serif;
 
   /* Spacing Grid */
   --space-1: 0.5rem;
@@ -66,8 +69,8 @@
   width: 1000px;
   height: 1000px;
   border-radius: 50%;
-  opacity: 0.3; /* Increased for high impact */
-  filter: blur(40px); /* Reduced blur for sharper definition */
+  opacity: 0.05; /* Soft glow for light theme */
+  filter: blur(120px); /* Soft blur */
   animation: pulseBlob 12s infinite alternate ease-in-out;
 }
 
@@ -139,7 +142,7 @@ h1, h2, h3, h4, .serif {
 }
 
 h2, h3 {
-  color: var(--color-teal);
+  color: var(--color-text-primary);
   letter-spacing: -0.02em;
   line-height: 1.15;
 }
@@ -206,7 +209,7 @@ section {
   top: 0;
   z-index: 1000;
   padding: var(--space-4) 5%;
-  background-color: #F9F7F5 !important;
+  background-color: var(--color-bg) !important;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1292,3 +1295,112 @@ section {
     align-items: flex-start;
   }
 }
+
+/* ================================================
+   Key Stats Display Redesign
+   ================================================ */
+.card-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.card-stat {
+  display: flex;
+  flex-direction: column;
+  min-width: 80px;
+}
+
+.card-stat .stat-val {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.card-stat .stat-desc {
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.display-stats {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-box .stat-num {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--color-orange);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-box .stat-lbl {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-secondary);
+}
+
+/* Custom visual polish */
+.section-glow-teal-orange::before {
+  background: radial-gradient(circle, rgba(0, 229, 255, 0.04) 0%, rgba(255, 183, 0, 0.04) 40%, transparent 80%);
+}
+
+.venture-card, .role-item, .impact-card {
+  border-radius: 4px;
+}
+
+.venture-card {
+  border: 1px solid var(--color-border);
+}
+
+.role-item {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.role-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.divider {
+  background: linear-gradient(to right, rgba(13, 148, 136, 0.2), rgba(217, 119, 6, 0.2));
+}
+
+.btn-teal {
+  background-color: var(--color-teal);
+  color: #FFFFFF !important;
+  font-weight: 600;
+}
+
+.btn-teal:hover {
+  background-color: #0F766E;
+  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.15);
+}
+
+.btn-ghost {
+  border-color: rgba(15, 23, 42, 0.2);
+  color: var(--color-text-primary) !important;
+}
+
+.btn-ghost:hover {
+  border-color: var(--color-orange);
+  color: var(--color-orange) !important;
+}
+
