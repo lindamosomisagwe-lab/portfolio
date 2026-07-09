@@ -1542,4 +1542,6 @@ a, button, .clickable, .tab-btn, .venture-card, .role-item, .project-card, .expa
   margin-bottom: var(--space-2);
 }
 
-
+.project-card:hover img {
+  filter: grayscale(0) !important;
+}
