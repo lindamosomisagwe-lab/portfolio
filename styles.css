@@ -4,28 +4,35 @@
    ================================================ */
 
 :root {
-  /* Modern Premium Light Editorial Design System */
-  --color-bg: #FCFBF9; /* Warm off-white sand background */
-  --color-bg-card: #FFFFFF; /* Crisp white card background */
-  --color-text-primary: #0F172A; /* Deep dark navy primary text */
-  --color-text-secondary: #475569; /* Slate gray secondary text */
-  --color-text-muted: #64748B; /* Muted gray text */
-  --color-border: rgba(15, 23, 42, 0.08); /* Clean dark borders with low opacity */
+  /* NYT Editorial Design System */
+  --color-bg: #F5F0E8; /* Ink-on-paper off-white/cream background */
+  --color-bg-card: #FAF8F5; /* Crisp lighter cream paper card background */
+  --color-text-primary: #1A1A1A; /* Near-black editorial ink text */
+  --color-text-secondary: #333333; /* Dark gray body copy */
+  --color-text-muted: #555555; /* Muted editorial text */
+  --color-border: #1A1A1A; /* Solid ink borders for dividers */
+  --color-border-subtle: rgba(26, 26, 26, 0.15); /* Soft divider lines */
   --space-8: 40px; 
   
-  /* Rich Editorial Accent Palette */
-  --color-teal: #0D9488; /* Elegant deep teal */
-  --color-orange: #D97706; /* Rich warm amber */
-  --color-amber: #B45309;
-  --color-teal-dark: #134E4A;
-  --color-teal-light: rgba(13, 148, 136, 0.05);
-  --color-orange-light: rgba(217, 119, 6, 0.05);
-  --color-terracotta: #C2410C;
-  --color-terracotta-light: rgba(194, 65, 12, 0.05);
+  /* Primary Accent: Deep Forest Green */
+  --color-teal: #1B4332; /* Deep Forest Green */
+  --color-teal-dark: #0D2018;
+  --color-teal-light: rgba(27, 67, 50, 0.06);
   
-  /* Typography */
-  --font-serif: 'DM Sans', 'Inter', sans-serif; /* Clean, modern geometric headings */
-  --font-sans: 'Inter', sans-serif;
+  /* Secondary Accent: Burnt Sienna */
+  --color-orange: #C1440E;
+  --color-orange-light: rgba(193, 68, 14, 0.06);
+  --color-terracotta: #C1440E;
+  --color-terracotta-light: rgba(193, 68, 14, 0.06);
+  
+  /* Typography System */
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-sans: 'DM Sans', 'Inter', sans-serif;
+  
+  /* Double Border Helper */
+  --border-double: 3px double var(--color-border);
+  --border-single: 1px solid var(--color-border);
+  --border-subtle-style: 1px solid var(--color-border-subtle);
 
   /* Spacing Grid */
   --space-1: 0.5rem;
@@ -1372,35 +1379,167 @@ section {
 }
 
 .role-item {
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: var(--border-subtle-style);
 }
 
 .role-item:first-child {
-  border-top: 1px solid var(--color-border);
+  border-top: var(--border-subtle-style);
 }
 
 .divider {
-  background: linear-gradient(to right, rgba(13, 148, 136, 0.2), rgba(217, 119, 6, 0.2));
+  height: 3px;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: transparent;
+  margin: var(--space-4) 0;
 }
 
 .btn-teal {
   background-color: var(--color-teal);
-  color: #FFFFFF !important;
+  border-color: var(--color-teal);
+  color: #F5F0E8 !important;
   font-weight: 600;
 }
 
 .btn-teal:hover {
-  background-color: #0F766E;
-  box-shadow: 0 4px 15px rgba(13, 148, 136, 0.15);
+  background-color: var(--color-teal-dark);
+  border-color: var(--color-teal-dark);
+  box-shadow: none;
 }
 
 .btn-ghost {
-  border-color: rgba(15, 23, 42, 0.2);
+  border-color: var(--color-border);
   color: var(--color-text-primary) !important;
 }
 
 .btn-ghost:hover {
-  border-color: var(--color-orange);
-  color: var(--color-orange) !important;
+  border-color: var(--color-teal);
+  color: var(--color-teal) !important;
 }
+
+/* ================================================
+   New York Times Editorial & Transitions Polish
+   ================================================ */
+
+/* Custom Cursors */
+a, button, .clickable, .tab-btn, .venture-card, .role-item, .project-card, .expandable-card, .menu-toggle {
+  cursor: crosshair !important;
+}
+
+/* Double Editorial Borders */
+.border-double-top {
+  border-top: var(--border-double);
+}
+.border-double-bottom {
+  border-bottom: var(--border-double);
+}
+.border-single-top {
+  border-top: var(--border-single);
+}
+.border-single-bottom {
+  border-bottom: var(--border-single);
+}
+
+/* Page Slide Transitions */
+.page-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--color-bg);
+  min-height: 100vh;
+}
+
+.page-container {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.page-content {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.page-container.transitioning {
+  width: 200%;
+  transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.page-container.transitioning .page-content {
+  width: 50%;
+}
+
+.page-container.slide-next {
+  transform: translateX(-50%);
+}
+
+.page-container.slide-prev {
+  transform: translateX(0);
+}
+
+/* Timeline Layout for /work */
+.timeline-container {
+  position: relative;
+  padding-left: 2rem;
+  border-left: var(--border-single);
+  margin-top: var(--space-6);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -5.5px;
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-teal);
+  border-radius: 50%;
+  top: 6px;
+}
+
+/* Sequential Line Reveal Animation */
+.reveal-line {
+  overflow: hidden;
+  display: block;
+}
+
+.reveal-word {
+  display: inline-block;
+  transform: translateY(105%);
+  transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-word.visible {
+  transform: translateY(0);
+}
+
+/* Text highlight for metrics */
+.stat-highlight {
+  color: var(--color-orange);
+  font-weight: 700;
+  font-family: var(--font-serif);
+  font-size: 1.15em;
+}
+
+/* Pull Quotes / Thinking Page Styles */
+.pull-quote {
+  font-family: var(--font-serif);
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: var(--color-teal);
+  border-top: var(--border-double);
+  border-bottom: var(--border-double);
+  padding: var(--space-4) 0;
+  margin: var(--space-6) 0;
+  text-align: center;
+  font-style: italic;
+}
+
+.pull-quote .highlight-num {
+  display: block;
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: normal;
+  color: var(--color-orange);
+  margin-bottom: var(--space-2);
+}
+
 

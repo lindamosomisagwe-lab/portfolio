@@ -3,265 +3,318 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professional Designs — Linda Sagwe</title>
-  <meta name="description" content="A curated collection of professional designs, print media, and visual content by Linda Sagwe.">
+  <title>Design Showcase — Linda Sagwe</title>
+  <meta name="description" content="Visual design portfolio, branding assets, and print layouts by Linda Sagwe.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .designs-intro {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      line-height: 1.6;
+      color: var(--color-text-secondary);
+      max-width: 75ch;
+      margin-bottom: var(--space-6);
+      border-bottom: var(--border-single);
+      padding-bottom: var(--space-4);
+    }
+
+    /* Category Filter Bar */
+    .filter-bar {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: var(--space-6);
+      border-bottom: var(--border-subtle-style);
+      padding-bottom: 0.75rem;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: none;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--color-text-muted);
+      cursor: crosshair;
+      transition: color 0.3s ease;
+      padding: 0;
+      position: relative;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      color: var(--color-teal);
+    }
+
+    .filter-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -13px;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--color-teal);
+    }
+
+    /* Light Editorial Masonry Grid */
+    .designs-masonry {
+      column-count: 3;
+      column-gap: var(--space-4);
+      width: 100%;
+    }
+
+    .designs-item {
+      break-inside: avoid;
+      margin-bottom: var(--space-4);
+      border: var(--border-single);
+      background-color: var(--color-bg-card);
+      padding: 10px;
+      transition: all 0.3s var(--ease-out);
+      cursor: crosshair;
+    }
+
+    .designs-item:hover {
+      transform: translateY(-3px);
+      box-shadow: 4px 4px 0 var(--color-teal);
+    }
+
+    .designs-item img, .designs-item video {
+      width: 100%;
+      display: block;
+      height: auto;
+    }
+
+    .designs-item-title {
+      font-family: var(--font-sans);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: 10px;
+      margin-bottom: 2px;
+      color: var(--color-text-primary);
+    }
+
+    .designs-item-cat {
+      font-size: 0.65rem;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Lightbox Modal */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(26, 26, 26, 0.95);
+      z-index: 3000;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .lightbox.open {
+      display: flex;
+    }
+
+    .lightbox-content {
+      max-width: 90%;
+      max-height: 80%;
+    }
+
+    .lightbox-content img, .lightbox-content video {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      border: 2px solid #FFFFFF;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      background: transparent;
+      border: none;
+      font-size: 2rem;
+      color: #FFFFFF;
+      cursor: crosshair;
+    }
+
+    .lightbox-caption {
+      margin-top: var(--space-3);
+      color: #FFFFFF;
+      text-align: center;
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .designs-masonry {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .designs-masonry {
+        column-count: 1;
+      }
+    }
+  </style>
 </head>
 <body>
 
-  <div class="bg-blobs">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
-  </div>
-
-  <div class="container">
-    <header class="site-header" id="site-header">
-      <a href="index.html" class="logo">Linda <span>Sagwe</span></a>
+  <div class="page-wrapper">
+    <!-- Newspaper Masthead Style Header -->
+    <header class="site-header border-double-bottom" id="site-header">
+      <a href="index.html" class="logo">LINDA SAGWE</a>
       <nav class="nav-links" id="nav-links">
-        <a href="index.html#about">ABOUT</a>
-        <a href="#ventures" data-target="ventures">VENTURES</a>
-        <a href="#roles" data-target="roles">ROLES</a>
-        <a href="#impact" data-target="impact">IMPACT</a>
-        <a href="designs.html" data-target="all" class="active">DESIGNS</a>
-        <a href="index.html#contact">CONTACT</a>
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="thinking.html">THINKING</a>
+        <a href="designs.html" class="active">DESIGNS</a>
+        <a href="contact.html">CONTACT</a>
       </nav>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
     </header>
 
-    <main>
-      <article>
-        <header class="case-hero">
-          <span class="section-label terracotta reveal">Strategic Design Portfolio</span>
-          <h1 class="reveal reveal-delay-1">Professional Designs.</h1>
-          
-          <div class="filter-bar reveal reveal-delay-2" style="display: flex; gap: 1rem; margin: 3rem 0; border-bottom: 1px solid rgba(0,0,0,0.05); padding-bottom: 1.5rem;">
-            <button class="filter-link active" data-target="all">ALL</button>
-            <button class="filter-link" data-target="logos">LOGOS | IDENTITY</button>
-            <button class="filter-link" data-target="social-media">SOCIAL | MOTION</button>
-            <button class="filter-link" data-target="print-designs">PRINT DESIGN</button>
-          </div>
-
-          <div class="category-statement active" id="hero-all" style="margin-bottom: 20px;">
-            <p>A strategic archive of creative marketing for internal ventures, social enterprises, and global community initiatives. Every asset is designed to bridge the gap between business strategy and tangible market results.</p>
-          </div>
-        </header>
-
-        <!-- Featured Highlights -->
-        <section id="featured-highlights" class="reveal section-glow-teal-orange" style="padding: 4rem 0; border-bottom: 1px solid var(--color-border); margin-bottom: 4rem;">
-          <h2 style="font-size: 1.1rem; margin-bottom: 3rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-muted); font-family: var(--font-sans); font-weight: 600;">Featured Highlights</h2>
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+    <div class="page-container" id="page-container">
+      <main class="page-content" id="page-content">
+        <section class="container">
+          <div class="section-header border-single-bottom" style="padding-bottom: var(--space-3);">
             <div>
-              <div class="video-embed" style="margin-bottom: 24px;">
-                <iframe loading="lazy" src="https://www.canva.com/design/DAHHTof8KZc/T3FXkUav2IEtDC3UBkAWbA/watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
-              </div>
-              <h3 style="font-size: 1.3rem; margin-bottom: 12px;">Mozaic Brand Strategy</h3>
-              <p style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">Comprehensive brand architecture and visual identity for a global student-led startup ecosystem.</p>
+              <span class="section-label teal">Branding & Print</span>
+              <h2>Visual Portfolio</h2>
             </div>
-            <div>
-              <img src="assets/Professional Designs/print-gicharani-charity-sports.png" alt="Gicharani Fundraiser" loading="lazy" style="width: 100%; height: auto; border-radius: 2px; box-shadow: 0 10px 40px rgba(0,0,0,0.08);">
-              <h3 style="font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">KES 100,000 School Fundraiser</h3>
-              <p style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">Visual assets for a community sports initiative that raised KES 100,000 for the Gicharani primary school infrastructure.</p>
-            </div>
-            <div>
-              <img src="assets/Professional Designs/last_code_hero_final.png" alt="The Last Code Kickstarter" loading="lazy" style="width: 100%; height: auto; border-radius: 2px; box-shadow: 0 10px 40px rgba(0,0,0,0.08); aspect-ratio: 16/9; object-fit: cover;">
-              <h3 style="font-size: 1.3rem; margin-top: 24px; margin-bottom: 12px;">The Last Code Kickstarter</h3>
-              <p style="font-family: var(--font-sans); font-size: 0.85rem; color: var(--color-text-secondary); line-height: 1.6;">Visual identity and manufacturing documentation for a fully funded AI-survival board game.</p>
-              <a href="https://www.kickstarter.com/projects/thelastcode/last-code-strategic-board-game-of-ai-and-survival" target="_blank" class="btn btn-primary" style="font-size: 0.75rem; padding: 0.8rem 1.5rem; margin-top: 10px;">View on Kickstarter →</a>
-            </div>
+            <span class="section-count">12 Items</span>
           </div>
-        </section>
 
-        <div class="divider"></div>
-        <h2 style="font-size: 1.1rem; margin-bottom: 3rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-text-muted); font-family: var(--font-sans); font-weight: 600;">Full Archive</h2>
+          <p class="designs-intro">
+            I design for my own ventures and collaborators. Understanding what communicates and what does not makes me better at marketing and brand strategy.
+          </p>
 
-        <section id="logos" style="margin-bottom: 6rem;">
-          <div class="masonry-grid">
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/misrr-logo-main-green.png" alt="Misrr Logo" loading="lazy">
-              <p>Visual identity for a student-led social enterprise focusing on sustainable fashion.</p>
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mohar-logo-alt-purple.png" alt="Mohar Logo" loading="lazy">
-              <p>Brand refresh for a heritage-focused creative agency.</p>
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-logo-black.png" alt="Mozaic Logo" loading="lazy">
-              <p>Logo suite for a venture-building collective.</p>
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mohar-logo-alt-purple.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mohar-wordmark-white.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mohar-wordmark-yellow.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos" style="padding: 2rem; background: var(--color-teal-light); text-align: center;">
-              <p style="font-size: 0.8rem; margin-bottom: 1rem;">Brand Strategy Document</p>
-              <a href="assets/Professional Designs/Mozaic Brand Assignment (3).pdf" target="_blank" class="media-link">View PDF Document →</a>
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-icon-black.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-icon-green.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-icon-maroon.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-logo-black.png" alt="Professional Design" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <p>Mozaic Suite: Minimalist identity for a venture-building collective.</p>
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <video src="assets/Professional Designs/teenpreneur-logo-animated.mp4" autoplay loop muted playsinline style="width: 100%; border-radius: 2px;"></video>
-              <p>Teenpreneur: Animated identity for youth innovation programs.</p>
-            </div>
-            <!-- Additional Logo variations -->
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/misrr-iconagraphy-green.png" alt="Misrr Iconography" loading="lazy">
-            </div>
-            <div class="masonry-item reveal" data-category="logos">
-              <img src="assets/Professional Designs/mozaic-icon-green.png" alt="Mozaic Icon" loading="lazy">
-            </div>
+          <!-- Category Selector -->
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="branding">Branding & Logos</button>
+            <button class="filter-btn" data-filter="print">Print Media</button>
+            <button class="filter-btn" data-filter="social">Social & Motion</button>
           </div>
-        </section>
 
-        <!-- SOCIAL & MOTION -->
-        <section id="social-media" class="reveal" style="margin-bottom: 4rem;">
-          <h3 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-teal); margin-bottom: 2rem;">Social & Motion</h3>
-          <div class="masonry-grid">
-            <div class="masonry-item" data-category="social-media">
-              <video src="assets/Professional Designs/social-birthday-invite-disco.mp4" autoplay loop muted playsinline></video>
-              <p>Animated event storytelling for community engagement.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <img src="assets/Professional Designs/social-fishlist-ad-general-v1.png" alt="Fishlist Ad" loading="lazy">
-              <p>Conversion-focused e-commerce campaign for Fishlist launch.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <img src="assets/Professional Designs/social-lindaskitchen-madaraka-v1.png" alt="Linda's Kitchen" loading="lazy">
-              <p>Holiday campaign assets driving community engagement for Linda's Kitchen.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <video src="assets/Professional Designs/social-mohar-transition-v1.mp4" autoplay loop muted playsinline></video>
-              <p>Motion graphics for brand transition announcements.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <img src="assets/Professional Designs/social-fishlist-family-guide1.png" alt="Fishlist Guide" loading="lazy">
-              <p>Educational content series for customer retention.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <video src="assets/Professional Designs/social-kubb-sale-ad-animated.mp4" autoplay loop muted playsinline></video>
-              <p>High-energy flash sale promotional video.</p>
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <video src="assets/Professional Designs/social-prom-invite-animated.mp4" autoplay loop muted playsinline></video>
-              <p>Event invitation motion design.</p>
-            </div>
-            <!-- More social assets -->
-            <div class="masonry-item" data-category="social-media">
-              <img src="assets/Professional Designs/social-lindaskitchen-mothersday-v1.png" alt="Mother's Day" loading="lazy">
-            </div>
-            <div class="masonry-item" data-category="social-media">
-              <img src="assets/Professional Designs/social-fishlist-ad-blackfriday-v1.png" alt="Black Friday" loading="lazy">
-            </div>
-          </div>
-        </section>
-
-        <!-- PRINT DESIGN -->
-        <section id="print-designs" class="reveal section-glow-teal-orange" style="margin-bottom: 6rem;">
-          <h3 style="font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-terracotta); margin-bottom: 2rem;">Print Design</h3>
-          <div class="masonry-grid">
-            <!-- Posters -->
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-dreamgirls-poster1.png" alt="Dreamgirls" loading="lazy">
-              <p>Editorial event poster for theatrical productions.</p>
-            </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-artexhibit-flyer.png" alt="Art Exhibit" loading="lazy">
-              <p>Promotional flyer for fine art gallery exhibitions.</p>
-            </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-education-equity-flyer.png" alt="Education Equity" loading="lazy">
-              <p>Visual advocacy for educational equity initiatives.</p>
-            </div>
+          <!-- Masonry Grid -->
+          <div class="designs-masonry" id="designs-masonry">
             
-            <!-- Game Manuals (PDF Highlights) -->
-            <div class="masonry-item" data-category="print-designs" style="padding: 2.5rem; background: var(--color-bg-card); text-align: center; border-radius: 4px; border: 1px solid var(--color-border);">
-              <h4 style="margin-bottom: 1rem; font-family: var(--font-serif);">The Last Code</h4>
-              <p style="font-size: 0.85rem; margin-bottom: 1.5rem;">Strategic Board Game Manual</p>
-              <a href="assets/Professional Designs/print-lastcode-ruleset.pdf" target="_blank" class="media-link" style="color: var(--color-teal); font-weight: 600;">View PDF Manual →</a>
-            </div>
-            <div class="masonry-item" data-category="print-designs" style="padding: 2.5rem; background: var(--color-bg-card); text-align: center; border-radius: 4px; border: 1px solid var(--color-border);">
-              <h4 style="margin-bottom: 1rem; font-family: var(--font-serif);">EcoRush</h4>
-              <p style="font-size: 0.85rem; margin-bottom: 1.5rem;">Social Impact Game Ruleset</p>
-              <a href="assets/Professional Designs/print-ecorush-ruleset.pdf" target="_blank" class="media-link" style="color: var(--color-terracotta); font-weight: 600;">View PDF Ruleset →</a>
+            <!-- Item 1 -->
+            <div class="designs-item" data-category="print">
+              <img src="assets/Professional Designs/print-gicharani-charity-sports.png" alt="KES 100k School Fundraiser Poster">
+              <h4 class="designs-item-title">School Fundraiser</h4>
+              <span class="designs-item-cat">Print Media</span>
             </div>
 
-            <!-- Banners & Events -->
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-fishlist-banner-1.png" alt="Fishlist Banner" loading="lazy">
+            <!-- Item 2 -->
+            <div class="designs-item" data-category="branding">
+              <img src="assets/Professional Designs/last_code_hero_final.png" alt="The Last Code Board Game Brand Identity">
+              <h4 class="designs-item-title">The Last Code Identity</h4>
+              <span class="designs-item-cat">Branding & Logos</span>
             </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-fishlist-event-1.jpg" alt="Fishlist Event" loading="lazy">
+
+            <!-- Item 3 -->
+            <div class="designs-item" data-category="print">
+              <img src="assets/Professional Designs/print-artexhibit-flyer.png" alt="Art Exhibition Event Flyer">
+              <h4 class="designs-item-title">Art Exhibit Flyer</h4>
+              <span class="designs-item-cat">Print Media</span>
             </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-prom-ticket.png" alt="Prom Ticket" loading="lazy">
-              <p>Custom ticket design for high-end school events.</p>
+
+            <!-- Item 4 -->
+            <div class="designs-item" data-category="print">
+              <img src="assets/Professional Designs/print-dreamgirls-poster1.png" alt="Dreamgirls Theater Poster Version A">
+              <h4 class="designs-item-title">Dreamgirls Poster A</h4>
+              <span class="designs-item-cat">Print Media</span>
             </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-lifesmart-womensday-v1.png" alt="Women's Day" loading="lazy">
+
+            <!-- Item 5 -->
+            <div class="designs-item" data-category="print">
+              <img src="assets/Professional Designs/print-dreamgirls-poster2.png" alt="Dreamgirls Theater Poster Version B">
+              <h4 class="designs-item-title">Dreamgirls Poster B</h4>
+              <span class="designs-item-cat">Print Media</span>
             </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-lindaskitchen-flyer-v1.jpg" alt="Linda's Kitchen Flyer" loading="lazy">
+
+            <!-- Item 6 -->
+            <div class="designs-item" data-category="print">
+              <img src="assets/Professional Designs/print-fishlist-banner-1.png" alt="Fishlist Digital Banner Version 1">
+              <h4 class="designs-item-title">Fishlist Banner 1</h4>
+              <span class="designs-item-cat">Print Media</span>
             </div>
-            <div class="masonry-item" data-category="print-designs">
-              <img src="assets/Professional Designs/print-hostel-flyer-v1.png" alt="Hostel Flyer" loading="lazy">
+
+            <!-- Item 7 -->
+            <div class="designs-item" data-category="branding">
+              <img src="assets/Professional Designs/mozaic-logo-maroon.png" alt="Mozaic Maroon Brand Logo">
+              <h4 class="designs-item-title">Mozaic Logo</h4>
+              <span class="designs-item-cat">Branding & Logos</span>
             </div>
+
+            <!-- Item 8 -->
+            <div class="designs-item" data-category="branding">
+              <img src="assets/Professional Designs/misrr-logo-main-mixed.png" alt="Misrr Main Brand Identity Logo">
+              <h4 class="designs-item-title">Misrr Main Logo</h4>
+              <span class="designs-item-cat">Branding & Logos</span>
+            </div>
+
+            <!-- Item 9 -->
+            <div class="designs-item" data-category="branding">
+              <img src="assets/Professional Designs/mohar-logo-alt-creme.png" alt="Mohar Cream Brand Mark">
+              <h4 class="designs-item-title">Mohar Logo Alt</h4>
+              <span class="designs-item-cat">Branding & Logos</span>
+            </div>
+
+            <!-- Item 10 -->
+            <div class="designs-item" data-category="social">
+              <img src="assets/Professional Designs/social-lindaskitchen-madaraka-v1.png" alt="Linda's Kitchen Madaraka Day Graphic V1">
+              <h4 class="designs-item-title">Linda's Kitchen Madaraka</h4>
+              <span class="designs-item-cat">Social Media</span>
+            </div>
+
+            <!-- Item 11 -->
+            <div class="designs-item" data-category="social">
+              <img src="assets/Professional Designs/social-lindaskitchen-mothersday-v1.png" alt="Linda's Kitchen Mother's Day Post V1">
+              <h4 class="designs-item-title">Mother's Day Post A</h4>
+              <span class="designs-item-cat">Social Media</span>
+            </div>
+
+            <!-- Item 12 -->
+            <div class="designs-item" data-category="social">
+              <img src="assets/Professional Designs/social-lindaskitchen-mothersday-v2.png" alt="Linda's Kitchen Mother's Day Post V2">
+              <h4 class="designs-item-title">Mother's Day Post B</h4>
+              <span class="designs-item-cat">Social Media</span>
+            </div>
+
           </div>
         </section>
-      </article>
+      </main>
+    </div>
+  </div>
 
-      <div class="divider" style="margin-top: var(--space-8);"></div>
+  <!-- Lightbox Modal for Design Expanding -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image">✕</button>
+    <div class="lightbox-content" id="lightbox-content">
+      <!-- Image/Video goes here -->
+    </div>
+    <div class="lightbox-caption" id="lightbox-caption">Caption text</div>
+  </div>
 
-      <div style="text-align: center; padding: var(--space-8) 0;">
-        <a href="index.html" class="btn btn-teal">Back to Portfolio</a>
-      </div>
-    </main>
-
-    <!-- Footer -->
-    <footer style="text-align: center; padding: 4rem 2rem; font-size: 0.9rem; color: #8A8A8A; margin-top: 4rem; border-top: 1px solid rgba(255,255,255,0.08);">
-      Open to BD, operations and strategy roles at AI or tech companies in Nairobi, Singapore and UAE.
-    </footer>
-
+  <script src="router.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-

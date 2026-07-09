@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Linda Sagwe — Editorial Profile</title>
+  <meta name="description" content="An editorial profile of Linda Sagwe. Business student and early-stage operator.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .about-layout {
+      display: grid;
+      grid-template-columns: 420px 1fr;
+      gap: var(--space-8);
+      margin-top: var(--space-6);
+      align-items: start;
+    }
+
+    .about-image-wrapper {
+      border: var(--border-single);
+      padding: var(--space-2);
+      background-color: var(--color-bg-card);
+    }
+
+    .about-image-wrapper img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(1);
+    }
+
+    .profile-title {
+      font-size: 3.2rem;
+      line-height: 1.1;
+      margin-bottom: var(--space-4);
+      font-weight: 700;
+    }
+
+    .profile-meta-bar {
+      border-top: var(--border-single);
+      border-bottom: var(--border-single);
+      padding: 0.75rem 0;
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--color-text-muted);
+      margin-bottom: var(--space-5);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .editorial-body {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      line-height: 1.65;
+      color: var(--color-text-primary);
+    }
+
+    .editorial-body p {
+      margin-bottom: var(--space-4);
+      color: var(--color-text-secondary);
+      font-family: var(--font-sans);
+      font-size: 1.05rem;
+      line-height: 1.75;
+    }
+
+    .editorial-body p::first-letter {
+      font-family: var(--font-serif);
+      font-size: 3.5rem;
+      float: left;
+      line-height: 0.85;
+      padding-right: 8px;
+      font-weight: 700;
+      color: var(--color-teal);
+    }
+
+    .sub-editorial-heading {
+      font-family: var(--font-serif);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-teal);
+      margin-top: var(--space-5);
+      margin-bottom: var(--space-2);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    @media (max-width: 900px) {
+      .about-layout {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+      }
+      .about-image-wrapper img {
+        height: 380px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Newspaper Masthead Style Header -->
+    <header class="site-header border-double-bottom" id="site-header">
+      <a href="index.html" class="logo">LINDA SAGWE</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="about.html" class="active">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="thinking.html">THINKING</a>
+        <a href="designs.html">DESIGNS</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <div class="page-container" id="page-container">
+      <main class="page-content" id="page-content">
+        <section class="container">
+          <div class="section-header border-single-bottom" style="padding-bottom: var(--space-3);">
+            <div>
+              <span class="section-label teal">Profile</span>
+              <h2>Editorial Narrative</h2>
+            </div>
+            <span class="section-count">Linda Sagwe</span>
+          </div>
+
+          <div class="about-layout">
+            <!-- Left Column: Portrait -->
+            <div class="about-image-wrapper reveal">
+              <img src="assets/hero-photo.png" alt="Linda Sagwe Portrait">
+            </div>
+
+            <!-- Right Column: Editorial Narrative -->
+            <div class="about-narrative reveal reveal-delay-1">
+              <h1 class="profile-title">Building structure where there isn't any yet.</h1>
+              
+              <div class="profile-meta-bar">
+                <span>Reporter: Portfolio Editorial Staff</span>
+                <span>Nairobi, UAE, Singapore</span>
+                <span>Published: July 2026</span>
+              </div>
+
+              <div class="editorial-body">
+                <p>
+                  I am someone who figures out problems, driven by curiosity and a genuine love of learning, but grounded in structure and clarity when it comes to actually building things. I started my first business at 12 and have not really stopped since. Currently building businesses in 7 countries at Tetr College of Business — learning from 150+ industry leaders and always working on the next thing.
+                </p>
+
+                <h3 class="sub-editorial-heading">The Method</h3>
+                <p style="padding-top: 0.5rem;">
+                  Operational chaos is inevitable at early-stage startups, but it shouldn't dictate execution. Whether rebuilding Notion CRMs, creating automated pipelines, or building AI chatbots for client events, the goal is always to deliver clarity. By structuring raw sales data, organizing supply chains, and setting workflows, I turn initial concepts into reliable processes.
+                </p>
+
+                <h3 class="sub-editorial-heading">The Achievements</h3>
+                <div class="display-stats" style="margin-top: 1.5rem; margin-bottom: 0.5rem;">
+                  <div class="stat-box">
+                    <span class="stat-num" style="font-size: 2.5rem; color: var(--color-teal);">7</span>
+                    <span class="stat-lbl">Countries</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num" style="font-size: 2.5rem; color: var(--color-teal);">4</span>
+                    <span class="stat-lbl">Ventures</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num" style="font-size: 2.5rem; color: var(--color-teal);">5</span>
+                    <span class="stat-lbl">Roles</span>
+                  </div>
+                  <div class="stat-box">
+                    <span class="stat-num" style="font-size: 2.5rem; color: var(--color-teal);">3</span>
+                    <span class="stat-lbl">Projects</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="router.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

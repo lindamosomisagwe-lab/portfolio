@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytical Thinking & Strategy — Linda Sagwe</title>
+  <meta name="description" content="Analytical strategy cases, operations audits, and financial research by Linda Sagwe.">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .editorial-features {
+      display: flex;
+      flex-direction: column;
+      gap: var(--space-12);
+      margin-top: var(--space-6);
+    }
+
+    .feature-article {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
+      align-items: center;
+      border-bottom: var(--border-subtle-style);
+      padding-bottom: var(--space-8);
+    }
+
+    .feature-article:nth-child(even) {
+      direction: rtl;
+    }
+
+    .feature-article:nth-child(even) .feature-text {
+      direction: ltr;
+    }
+
+    .feature-text h3 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--color-text-primary);
+      line-height: 1.1;
+      margin-bottom: var(--space-2);
+    }
+
+    .feature-summary {
+      font-family: var(--font-serif);
+      font-size: 1.2rem;
+      font-style: italic;
+      color: var(--color-teal);
+      margin-bottom: var(--space-4);
+      line-height: 1.4;
+    }
+
+    .feature-desc {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      color: var(--color-text-secondary);
+    }
+
+    @media (max-width: 800px) {
+      .feature-article {
+        grid-template-columns: 1fr;
+        gap: var(--space-5);
+      }
+      .feature-article:nth-child(even) {
+        direction: ltr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="page-wrapper">
+    <!-- Newspaper Masthead Style Header -->
+    <header class="site-header border-double-bottom" id="site-header">
+      <a href="index.html" class="logo">LINDA SAGWE</a>
+      <nav class="nav-links" id="nav-links">
+        <a href="about.html">ABOUT</a>
+        <a href="work.html">WORK</a>
+        <a href="projects.html">PROJECTS</a>
+        <a href="thinking.html" class="active">THINKING</a>
+        <a href="designs.html">DESIGNS</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+    </header>
+
+    <div class="page-container" id="page-container">
+      <main class="page-content" id="page-content">
+        <section class="container">
+          <div class="section-header border-single-bottom" style="padding-bottom: var(--space-3);">
+            <div>
+              <span class="section-label teal">Editorial features</span>
+              <h2>Strategic Thinking & Cases</h2>
+            </div>
+            <span class="section-count">04 Cases</span>
+          </div>
+
+          <div class="editorial-features">
+            
+            <!-- Case 1: Mohar DCF -->
+            <article class="feature-article">
+              <div class="feature-text">
+                <h3>Financial Valuation: Mohar DCF Case Study</h3>
+                <p class="feature-summary">A quantitative financial model and entry strategy case for Mohar's market entry valuation.</p>
+                <p class="feature-desc">
+                  Evaluated growth projections, capital expenditures, and working capital requirements to build a complete 5-year discounted cash flow model. Formulated pricing and growth sensitivity matrices under variable cost scenarios.
+                </p>
+              </div>
+              <div class="feature-quote-wrapper">
+                <div class="pull-quote">
+                  <span class="highlight-num">NPV $1.10M</span>
+                  "Formulated entry strategy under 68% IRR projection."
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 2: EdTech Research -->
+            <article class="feature-article">
+              <div class="feature-text">
+                <h3>EdTech Market Research & Product Validation</h3>
+                <p class="feature-summary">Assessing the digital literacy gap and EdTech scaling opportunities in East Africa.</p>
+                <p class="feature-desc">
+                  Led strategic market validation research to assess product-market fit for localized educational platforms. Conducted user interviews and digital feedback loops to build and refine feature sets.
+                </p>
+              </div>
+              <div class="feature-quote-wrapper">
+                <div class="pull-quote">
+                  <span class="highlight-num">1,001 Users</span>
+                  "Achieved 90% customer satisfaction score during beta phase."
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 3: Tech Safari Audit -->
+            <article class="feature-article">
+              <div class="feature-text">
+                <h3>Tech Safari Operations Audit & CRM Automation</h3>
+                <p class="feature-summary">Re-engineering internal communication pipelines and system operations.</p>
+                <p class="feature-desc">
+                  Conducted a systems audit of client onboarding workflows. Built Zapier automations linking ClickUp, Slack, and a custom Notion CRM from scratch, eliminating manual operations overhead and providing direct leadership visibility.
+                </p>
+              </div>
+              <div class="feature-quote-wrapper">
+                <div class="pull-quote">
+                  <span class="highlight-num">0% Manual</span>
+                  "Automated 100% of pipeline reporting to operations leads."
+                </div>
+              </div>
+            </article>
+
+            <!-- Case 4: Rokid Strategy -->
+            <article class="feature-article">
+              <div class="feature-text">
+                <h3>Rokid AR Glassware Strategy Case</h3>
+                <p class="feature-summary">Market entry strategy for consumer-facing augmented reality glassware.</p>
+                <p class="feature-desc">
+                  Analyzed competitive dynamics and GTM strategies for Rokid's hardware expansion. Researched demographic triggers and designed strategic channel partnerships in targeted regional hubs.
+                </p>
+              </div>
+              <div class="feature-quote-wrapper">
+                <div class="pull-quote">
+                  <span class="highlight-num">3 Markets</span>
+                  "Proposed channel partnerships yielding +40% engagement."
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script src="router.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
