@@ -15,21 +15,55 @@
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Hero Fullscreen Specific Tweaks */
-    .hero-fullscreen {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+    /* Visual Homepage Styles */
+    .hero-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-8);
       align-items: center;
-      text-align: center;
       min-height: calc(85vh - 80px);
       padding: var(--space-6) 0;
       position: relative;
     }
 
+    @media (max-width: 900px) {
+      .hero-split {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+    }
+
+    .hero-image-wrapper {
+      border: 1px solid rgba(26, 26, 26, 0.08);
+      padding: var(--space-2);
+      background-color: var(--color-bg-card);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(26, 26, 26, 0.02), 0 1px 3px rgba(26, 26, 26, 0.02);
+      transform: rotate(2deg);
+      transition: transform 0.5s ease;
+    }
+
+    .hero-image-wrapper:hover {
+      transform: rotate(0deg);
+    }
+
+    .hero-image-wrapper img {
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: center top;
+      filter: grayscale(1);
+      border-radius: 4px;
+      transition: filter 0.5s ease;
+    }
+
+    .hero-image-wrapper:hover img {
+      filter: grayscale(0);
+    }
+
     .hero-name {
       font-family: var(--font-serif);
-      font-size: clamp(3.5rem, 10vw, 8rem);
+      font-size: clamp(3.5rem, 8vw, 6.5rem);
       font-weight: 700;
       line-height: 0.9;
       letter-spacing: -0.03em;
@@ -40,11 +74,10 @@
 
     .hero-tagline-editorial {
       font-family: var(--font-serif);
-      font-size: clamp(1.4rem, 3.5vw, 2.2rem);
+      font-size: clamp(1.4rem, 3vw, 2rem);
       font-style: italic;
       color: var(--color-teal);
       margin-bottom: var(--space-5);
-      max-width: 30ch;
       font-weight: 500;
     }
 
@@ -63,18 +96,80 @@
       margin-top: var(--space-2);
     }
 
-    /* Paper Texture Animation */
-    .paper-texture {
-      position: absolute;
-      top: 0;
-      left: 0;
+    @media (max-width: 900px) {
+      .hero-links-editorial {
+        justify-content: center;
+      }
+    }
+
+    /* Selected Work Section */
+    .selected-work {
+      padding: var(--space-10) 0;
+      border-top: 1px solid rgba(26, 26, 26, 0.12);
+    }
+
+    .section-header {
+      margin-bottom: var(--space-6);
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .section-header h2 {
+      font-size: 2.5rem;
+    }
+
+    .work-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--space-6);
+    }
+
+    @media (max-width: 768px) {
+      .work-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .work-card {
+      border: 1px solid rgba(26, 26, 26, 0.08);
+      background-color: var(--color-bg-card);
+      padding: var(--space-4);
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(26, 26, 26, 0.02), 0 1px 3px rgba(26, 26, 26, 0.02);
+      transition: all 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .work-card:hover {
+      border-color: var(--color-teal);
+      box-shadow: 0 20px 38px rgba(27, 67, 50, 0.06);
+      transform: translateY(-5px);
+    }
+
+    .work-card-img {
+      width: 100%;
+      height: 250px;
+      overflow: hidden;
+      margin-bottom: var(--space-4);
+      border-radius: 6px;
+      border: 1px solid rgba(26, 26, 26, 0.05);
+    }
+
+    .work-card-img img {
       width: 100%;
       height: 100%;
-      background-image: radial-gradient(var(--color-border-subtle) 1px, transparent 1px);
-      background-size: 24px 24px;
-      opacity: 0.15;
-      pointer-events: none;
-      z-index: 0;
+      object-fit: cover;
+      filter: grayscale(1);
+      transition: filter 0.3s ease;
+    }
+
+    .work-card:hover .work-card-img img {
+      filter: grayscale(0);
+    }
+
+    .work-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: var(--space-2);
     }
   </style>
 </head>
@@ -96,19 +191,51 @@
 
     <div class="page-container" id="page-container">
       <main class="page-content" id="page-content">
-        <section class="container hero-fullscreen">
-          <div class="paper-texture"></div>
+        
+        <!-- Visual Split Hero -->
+        <section class="container hero-split">
+          <div class="hero-text">
+            <h1 class="hero-name reveal-word-by-word">LINDA SAGWE</h1>
+            <p class="hero-tagline-editorial reveal-line">"Building in 7 countries. Figuring out what works."</p>
+            <p class="hero-desc-editorial reveal">
+              I am someone who figures out problems, driven by curiosity and a genuine love of learning, but grounded in structure and clarity when it comes to actually building things.
+            </p>
+            <div class="hero-links-editorial reveal">
+              <a href="projects.html" class="btn btn-teal">View Projects →</a>
+              <a href="designs.html" class="btn btn-ghost">Visual Portfolio</a>
+            </div>
+          </div>
           
-          <h1 class="hero-name reveal-word-by-word">LINDA SAGWE</h1>
-          <p class="hero-tagline-editorial reveal-line">"Building in 7 countries. Figuring out what works."</p>
-          <p class="hero-desc-editorial reveal">
-            I am someone who figures out problems, driven by curiosity and a genuine love of learning, but grounded in structure and clarity when it comes to actually building things.
-          </p>
-          <div class="hero-links-editorial reveal">
-            <a href="work.html" class="btn btn-teal">Enter Portfolio →</a>
-            <a href="thinking.html" class="btn btn-ghost">Explore Thinking</a>
+          <div class="hero-image-wrapper reveal">
+            <img src="assets/hero-photo.png" alt="Linda Sagwe Portrait">
           </div>
         </section>
+
+        <!-- Selected Work Visual Grid -->
+        <section class="container selected-work reveal">
+          <div class="section-header">
+            <h2>Selected Work</h2>
+            <a href="projects.html" class="btn btn-ghost">View All Work →</a>
+          </div>
+          <div class="work-grid">
+            <a href="projects.html" class="work-card">
+              <div class="work-card-img">
+                <img src="assets/Professional Designs/last_code_hero_final.png" alt="Anti-Gravity App">
+              </div>
+              <h3>Anti-Gravity App</h3>
+              <p class="project-desc-short" style="color: var(--color-text-secondary);">A spatial note-taking application designed for infinite canvas brainstorming.</p>
+            </a>
+            
+            <a href="projects.html" class="work-card">
+              <div class="work-card-img">
+                <img src="assets/project-2.png" alt="LifeSMART Wellness">
+              </div>
+              <h3>LifeSMART Wellness</h3>
+              <p class="project-desc-short" style="color: var(--color-text-secondary);">A personal wellness tracker mapping sleep, steps, and mood metrics in a unified dashboard.</p>
+            </a>
+          </div>
+        </section>
+
       </main>
     </div>
   </div>
