@@ -29,9 +29,9 @@
   --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
   --font-sans: 'DM Sans', 'Inter', sans-serif;
   
-  /* Double Border Helper */
-  --border-double: 3px double var(--color-border);
-  --border-single: 1px solid var(--color-border);
+  /* Premium Border Helper */
+  --border-double: 1px solid rgba(26, 26, 26, 0.12);
+  --border-single: 1px solid rgba(26, 26, 26, 0.15);
   --border-subtle-style: 1px solid var(--color-border-subtle);
 
   /* Spacing Grid */
