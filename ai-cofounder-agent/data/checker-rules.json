@@ -2,6 +2,6 @@
   {
     "rule": "THE CLASSIFIER marked 'Post a signup announcement in local Facebook community groups to validate demand' ai_doable but it involved a public-channel post; THE INSPECTOR caught it and the founder confirmed the correction. Add 'post'/'publish' to the classifier's own external-action markers so this is caught on the first pass next time, not just at routing-check.",
     "source": "THE INSPECTOR (routing-checker) override",
-    "added_at": "2026-09-09T19:51:40+00:00"
+    "added_at": "2026-09-09T19:56:52+00:00"
   }
 ]

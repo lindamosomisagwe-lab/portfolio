@@ -1,10 +1,13 @@
 # AI Cofounder Agent -- CLI Prototype
 
-A runnable prototype of the pipeline described in the project brief: an
-idea goes in, and the agent validates it, gets founder sign-off, turns it
-into a plan and goals, decomposes those into tasks, checks and classifies
-each task, routes it to a human queue or an AI executor, audits AI output,
-and runs a Learn/check-in cycle.
+A runnable prototype of the pipeline described in the project brief: a
+founder brings an idea they've already decided to act on, and the agent
+turns it into a plan and goals, decomposes those into tasks, checks and
+classifies each task, routes it to a human queue or an AI executor,
+audits AI output, and runs a Learn/check-in cycle.
+
+Idea validation/analysis (SWOT-style scoring of the business idea itself)
+is out of scope for this prototype -- it starts at planning.
 
 This is a CLI, not a UI, and there are no real bank/registration/social
 integrations -- every "AI-doable" task produces a draft artifact for a
@@ -25,7 +28,6 @@ persona is simulated or real.
 
 | Persona | Role | Stage |
 |---|---|---|
-| **THE ANALYST** | SWOT read of the raw idea | validate |
 | **THE SKEPTIC** | Align-checker -- distrusts decomposition by default, requires shared vocabulary with the stated goal | align_check |
 | **THE CLASSIFIER** | Human-required vs AI-doable, with a reason. Deliberately narrower external-action rule set than THE INSPECTOR (see below) | classify |
 | **THE INSPECTOR** | Routing-checker -- a rules-lawyer with a broader, harder external-action rule set. Differently prompted from THE SKEPTIC: not concerned with goal alignment at all | routing_check |
@@ -45,7 +47,7 @@ cofounder/
   storage.py                  JSON persistence for the 4 stores in data/
   personas.py                 all persona logic (the "AI", simulated)
   io.py                       founder I/O: real input(), or a scripted queue
-  pipeline.py                 orchestrates all 11 pipeline stages
+  pipeline.py                 orchestrates the pipeline stages
   stages/                     one module per pipeline stage
 data/
   goal-context.json           founder's current plan + goals
@@ -82,39 +84,36 @@ files to start from a clean board.
 Idea: a subscription box that rescues surplus/"ugly" produce from local
 farms and delivers it to households at a discount.
 
-1. **Validate** -- THE ANALYST produces a SWOT read.
-2. **Founder checkpoint** -- founder approves. (The CLI also supports
-   "request more analysis," which loops validation with an added focus
-   area, and "kill," which halts the whole pipeline immediately --
-   both are real code paths, just not exercised in this walkthrough.)
-3. **Plan and goals** -- founder states resources/time/constraints; four
+1. **Idea intake** -- idea is submitted, pipeline proceeds straight to
+   planning (no idea-validation stage in this prototype).
+2. **Plan and goals** -- founder states resources/time/constraints; four
    goals are drafted from them (validate demand, line up suppliers,
    secure funding, stand up legal/banking basics).
-4. **Decompose** -- 13 tasks generated, including the seed AI-doable
+3. **Decompose** -- 13 tasks generated, including the seed AI-doable
    examples from the spec (find funding sources, identify mentors,
    draft outreach, draft application docs, prep a bank-account checklist)
    and one task -- "Design company swag..." -- deliberately left
    disconnected from any goal.
-5. **Align check (andon cord)** -- THE SKEPTIC halts exactly that one
+4. **Align check (andon cord)** -- THE SKEPTIC halts exactly that one
    task (0.00 vocabulary overlap with its nominal goal) and logs it
    instead of dropping it silently. The founder is asked and drops it.
-6. **Classify** -- THE CLASSIFIER marks "Post a signup announcement in
+5. **Classify** -- THE CLASSIFIER marks "Post a signup announcement in
    local Facebook community groups..." as **ai_doable** (its rule set
    doesn't cover "post").
-7. **Routing check** -- THE INSPECTOR disagrees: posting to a public
+6. **Routing check** -- THE INSPECTOR disagrees: posting to a public
    channel is a real external action, always human-required. HALT,
    logged as a disagreement, not auto-resolved. Founder accepts the
    correction.
-8. **Route** -- 4 tasks to the human queue (call a supplier, submit the
+7. **Route** -- 4 tasks to the human queue (call a supplier, submit the
    funding application, file the business registration, and the
    corrected Facebook-post task), 8 to the AI queue.
-9. **Execute** -- all 8 AI-doable tasks run through THE DOER concurrently
+8. **Execute** -- all 8 AI-doable tasks run through THE DOER concurrently
    (`ThreadPoolExecutor`), independent tasks like funding-source research
    and mentor-outreach drafting genuinely running in parallel.
-10. **Audit** -- THE AUDITOR checks every output against its task before
-    marking it done; all 8 pass in this run (audit rejects thin output
-    and any output claiming a completed real-world action).
-11. **Learn / check-in** -- the routing-check override becomes a
+9. **Audit** -- THE AUDITOR checks every output against its task before
+   marking it done; all 8 pass in this run (audit rejects thin output
+   and any output claiming a completed real-world action).
+10. **Learn / check-in** -- the routing-check override becomes a
     persisted rule ("add post/publish to THE CLASSIFIER's own markers"),
     and the overdue human task (simulated as already past due, to
     exercise this check) produces a founder reminder.

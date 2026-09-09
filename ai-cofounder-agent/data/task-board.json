@@ -1,7 +1,7 @@
 {
-  "task-195140199206": {
-    "id": "task-195140199206",
-    "goal_id": "goal-195140199007",
+  "task-195652188940": {
+    "id": "task-195652188940",
+    "goal_id": "goal-195652188595",
     "description": "Post a signup announcement in local Facebook community groups to validate demand",
     "status": "queued_human",
     "owner": "human",
@@ -11,43 +11,43 @@
     "result": null,
     "audit_passed": null,
     "audit_notes": "",
-    "due": "2026-09-06T19:51:40+00:00",
+    "due": "2026-09-06T19:56:52+00:00",
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.29). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_disagreement",
         "detail": "Classification says AI-doable, but the task text matches external-action marker(s) ['\\\\bpost\\\\b']. Policy: any real external action or communication is ALWAYS human-required, even if AI drafted the content. Disagreeing with the classifier -- flagging, not fixing."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "founder",
         "action": "override_classification",
         "detail": "ai_doable -> human_required"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_human",
-        "detail": "due 2026-09-06T19:51:40+00:00"
+        "detail": "due 2026-09-06T19:56:52+00:00"
       }
     ]
   },
-  "task-195140199217": {
-    "id": "task-195140199217",
-    "goal_id": "goal-195140199028",
+  "task-195652188952": {
+    "id": "task-195652188952",
+    "goal_id": "goal-195652188737",
     "description": "Schedule a call with each shortlisted supplier to discuss terms",
     "status": "queued_human",
     "owner": "human",
@@ -57,37 +57,37 @@
     "result": null,
     "audit_passed": null,
     "audit_notes": "",
-    "due": "2026-09-16T19:51:40+00:00",
+    "due": "2026-09-16T19:56:52+00:00",
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Line up the external partners/suppliers the idea depends on' (overlap 0.17). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'human_required'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_human",
-        "detail": "due 2026-09-16T19:51:40+00:00"
+        "detail": "due 2026-09-16T19:56:52+00:00"
       }
     ]
   },
-  "task-195140199235": {
-    "id": "task-195140199235",
-    "goal_id": "goal-195140199032",
+  "task-195652188969": {
+    "id": "task-195652188969",
+    "goal_id": "goal-195652188745",
     "description": "Submit the completed funding application",
     "status": "queued_human",
     "owner": "human",
@@ -97,37 +97,37 @@
     "result": null,
     "audit_passed": null,
     "audit_notes": "",
-    "due": "2026-09-16T19:51:40+00:00",
+    "due": "2026-09-16T19:56:52+00:00",
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.25). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'human_required'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_human",
-        "detail": "due 2026-09-16T19:51:40+00:00"
+        "detail": "due 2026-09-16T19:56:52+00:00"
       }
     ]
   },
-  "task-195140199241": {
-    "id": "task-195140199241",
-    "goal_id": "goal-195140199035",
+  "task-195652188975": {
+    "id": "task-195652188975",
+    "goal_id": "goal-195652188749",
     "description": "File the business registration with the state",
     "status": "queued_human",
     "owner": "human",
@@ -137,37 +137,37 @@
     "result": null,
     "audit_passed": null,
     "audit_notes": "",
-    "due": "2026-09-16T19:51:40+00:00",
+    "due": "2026-09-16T19:56:52+00:00",
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Stand up the minimum legal/operational scaffolding to trade legally' (overlap 0.50). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'human_required'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_human",
-        "detail": "due 2026-09-16T19:51:40+00:00"
+        "detail": "due 2026-09-16T19:56:52+00:00"
       }
     ]
   },
-  "task-195140199196": {
-    "id": "task-195140199196",
-    "goal_id": "goal-195140199007",
+  "task-195652188928": {
+    "id": "task-195652188928",
+    "goal_id": "goal-195652188595",
     "description": "Draft landing page copy describing the offer to gauge signup demand",
     "status": "done",
     "owner": "ai",
@@ -180,46 +180,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.22). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199209": {
-    "id": "task-195140199209",
-    "goal_id": "goal-195140199007",
+  "task-195652188944": {
+    "id": "task-195652188944",
+    "goal_id": "goal-195652188595",
     "description": "Collect and tabulate signups from the demand-validation page",
     "status": "done",
     "owner": "ai",
@@ -232,46 +232,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.33). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199213": {
-    "id": "task-195140199213",
-    "goal_id": "goal-195140199028",
+  "task-195652188948": {
+    "id": "task-195652188948",
+    "goal_id": "goal-195652188737",
     "description": "Identify local farms/suppliers that match our sourcing needs",
     "status": "done",
     "owner": "ai",
@@ -284,46 +284,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Line up the external partners/suppliers the idea depends on' (overlap 0.17). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 0.86) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199220": {
-    "id": "task-195140199220",
-    "goal_id": "goal-195140199032",
+  "task-195652188955": {
+    "id": "task-195652188955",
+    "goal_id": "goal-195652188745",
     "description": "Find funding sources matching our stage and industry",
     "status": "done",
     "owner": "ai",
@@ -336,46 +336,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.17). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 0.83) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199224": {
-    "id": "task-195140199224",
-    "goal_id": "goal-195140199032",
+  "task-195652188958": {
+    "id": "task-195652188958",
+    "goal_id": "goal-195652188745",
     "description": "Identify mentors or investors worth contacting",
     "status": "done",
     "owner": "ai",
@@ -388,46 +388,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.40). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 0.80) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199227": {
-    "id": "task-195140199227",
-    "goal_id": "goal-195140199032",
+  "task-195652188962": {
+    "id": "task-195652188962",
+    "goal_id": "goal-195652188745",
     "description": "Draft an outreach message to a prospective mentor",
     "status": "done",
     "owner": "ai",
@@ -440,46 +440,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.20). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199232": {
-    "id": "task-195140199232",
-    "goal_id": "goal-195140199032",
+  "task-195652188966": {
+    "id": "task-195652188966",
+    "goal_id": "goal-195652188745",
     "description": "Draft documentation for a funding application",
     "status": "done",
     "owner": "ai",
@@ -492,46 +492,46 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.25). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
       }
     ]
   },
-  "task-195140199238": {
-    "id": "task-195140199238",
-    "goal_id": "goal-195140199035",
+  "task-195652188972": {
+    "id": "task-195652188972",
+    "goal_id": "goal-195652188749",
     "description": "Prepare a checklist for opening a business bank account",
     "status": "done",
     "owner": "ai",
@@ -544,37 +544,37 @@
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE SKEPTIC",
         "action": "align_check_pass",
         "detail": "Task ties back to 'Stand up the minimum legal/operational scaffolding to trade legally' (overlap 0.33). No objection."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
         "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE INSPECTOR",
         "action": "routing_check_pass",
         "detail": "No external-action markers conflicting with classification 'ai_doable'."
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "route",
         "action": "queued_ai",
         "detail": "dispatched to AI executor pool"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T19:51:40+00:00",
+        "at": "2026-09-09T19:56:52+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
         "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."

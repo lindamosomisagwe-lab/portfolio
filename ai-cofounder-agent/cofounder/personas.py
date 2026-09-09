@@ -10,7 +10,6 @@ of these for a real model call later means implementing the same
 function signature; nothing upstream or downstream changes.
 
 Personas:
-  - THE ANALYST   : idea validation (SWOT)
   - THE SKEPTIC    : align-checker -- distrusts decomposition by default
   - THE INSPECTOR  : routing-checker -- a rules-lawyer, not a strategist
   - THE DOER       : single shared executor for all AI-doable tasks
@@ -74,39 +73,6 @@ class PersonaVerdict:
     persona: str
     verdict: str          # "pass" | "halt"
     reasoning: str
-
-
-# ---------------------------------------------------------------------------
-# THE ANALYST -- idea validation
-# ---------------------------------------------------------------------------
-
-_SWOT_KEYWORDS = {
-    "strength": ["local", "existing", "network", "relationship", "expertise", "cheap", "discount", "recurring"],
-    "weakness": ["untested", "new", "unproven", "no experience", "manual", "seasonal", "perishable"],
-    "opportunity": ["growing", "trend", "underserved", "waste", "demand", "gap", "sustainab"],
-    "threat": ["competit", "regulation", "margin", "supply", "weather", "incumbent"],
-}
-
-
-def analyst_swot(idea_text: str) -> dict[str, list[str]]:
-    """Deterministic SWOT: keyword-driven read of the idea, plus generic
-    startup-analysis defaults that apply to any early-stage idea."""
-    lowered = idea_text.lower()
-    report: dict[str, list[str]] = {"strengths": [], "weaknesses": [], "opportunities": [], "threats": []}
-
-    for cat, kws in _SWOT_KEYWORDS.items():
-        hits = [kw for kw in kws if kw in lowered]
-        bucket = {"strength": "strengths", "weakness": "weaknesses",
-                  "opportunity": "opportunities", "threat": "threats"}[cat]
-        for kw in hits:
-            report[bucket].append(f"Idea explicitly leans on '{kw}' -- worth substantiating with evidence.")
-
-    # Generic early-stage defaults so the report is never empty/thin.
-    report["strengths"].append("Idea is concrete enough to decompose into testable tasks.")
-    report["weaknesses"].append("No market validation yet -- all claims below are assumptions until tested.")
-    report["opportunities"].append("Early-stage means cost of testing the idea now is low relative to later.")
-    report["threats"].append("Unknown competitive response and unknown true unit economics until piloted.")
-    return report
 
 
 # ---------------------------------------------------------------------------
