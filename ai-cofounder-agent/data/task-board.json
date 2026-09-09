@@ -1,0 +1,584 @@
+{
+  "task-195140199206": {
+    "id": "task-195140199206",
+    "goal_id": "goal-195140199007",
+    "description": "Post a signup announcement in local Facebook community groups to validate demand",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "Corrected by founder after routing-check disagreement: involves a real external action, must be human-required.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-06T19:51:40+00:00",
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.29). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_disagreement",
+        "detail": "Classification says AI-doable, but the task text matches external-action marker(s) ['\\\\bpost\\\\b']. Policy: any real external action or communication is ALWAYS human-required, even if AI drafted the content. Disagreeing with the classifier -- flagging, not fixing."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "founder",
+        "action": "override_classification",
+        "detail": "ai_doable -> human_required"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-06T19:51:40+00:00"
+      }
+    ]
+  },
+  "task-195140199217": {
+    "id": "task-195140199217",
+    "goal_id": "goal-195140199028",
+    "description": "Schedule a call with each shortlisted supplier to discuss terms",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-16T19:51:40+00:00",
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Line up the external partners/suppliers the idea depends on' (overlap 0.17). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'human_required'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-16T19:51:40+00:00"
+      }
+    ]
+  },
+  "task-195140199235": {
+    "id": "task-195140199235",
+    "goal_id": "goal-195140199032",
+    "description": "Submit the completed funding application",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-16T19:51:40+00:00",
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.25). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'human_required'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-16T19:51:40+00:00"
+      }
+    ]
+  },
+  "task-195140199241": {
+    "id": "task-195140199241",
+    "goal_id": "goal-195140199035",
+    "description": "File the business registration with the state",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-16T19:51:40+00:00",
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Stand up the minimum legal/operational scaffolding to trade legally' (overlap 0.50). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'human_required'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-16T19:51:40+00:00"
+      }
+    ]
+  },
+  "task-195140199196": {
+    "id": "task-195140199196",
+    "goal_id": "goal-195140199007",
+    "description": "Draft landing page copy describing the offer to gauge signup demand",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft landing page copy describing the offer to gauge signup demand\n\nHi [Name],\n\n(Draft body addressing: Draft landing page copy describing the offer to gauge signup demand.)\n\n-- Draft only. A human must review and send.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.22). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199209": {
+    "id": "task-195140199209",
+    "goal_id": "goal-195140199007",
+    "description": "Collect and tabulate signups from the demand-validation page",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT OUTPUT -- for review]\nAddressing: Collect and tabulate signups from the demand-validation page\n(Generic draft produced by the shared executor; no real-world action taken.)",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Validate real demand before committing further resources' (overlap 0.33). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199213": {
+    "id": "task-195140199213",
+    "goal_id": "goal-195140199028",
+    "description": "Identify local farms/suppliers that match our sourcing needs",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: local farms/suppliers that match our sourcing needs\n- Candidate 1: (placeholder) sourced from public criteria matching 'local farms/suppliers that match our sourcing needs'\n- Candidate 2: (placeholder) sourced from public criteria matching 'local farms/suppliers that match our sourcing needs'\n- Candidate 3: (placeholder) sourced from public criteria matching 'local farms/suppliers that match our sourcing needs'\nNote: this is a draft shortlist. No candidate has been contacted.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 0.86) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Line up the external partners/suppliers the idea depends on' (overlap 0.17). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 0.86) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199220": {
+    "id": "task-195140199220",
+    "goal_id": "goal-195140199032",
+    "description": "Find funding sources matching our stage and industry",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: funding sources matching our stage and industry\n- Candidate 1: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 2: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 3: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\nNote: this is a draft shortlist. No candidate has been contacted.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 0.83) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.17). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 0.83) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199224": {
+    "id": "task-195140199224",
+    "goal_id": "goal-195140199032",
+    "description": "Identify mentors or investors worth contacting",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: mentors or investors worth contacting\n- Candidate 1: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 2: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 3: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\nNote: this is a draft shortlist. No candidate has been contacted.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 0.80) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.40). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 0.80) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199227": {
+    "id": "task-195140199227",
+    "goal_id": "goal-195140199032",
+    "description": "Draft an outreach message to a prospective mentor",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft an outreach message to a prospective mentor\n\nHi [Name],\n\n(Draft body addressing: Draft an outreach message to a prospective mentor.)\n\n-- Draft only. A human must review and send.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.20). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199232": {
+    "id": "task-195140199232",
+    "goal_id": "goal-195140199032",
+    "description": "Draft documentation for a funding application",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft documentation for a funding application\n\nHi [Name],\n\n(Draft body addressing: Draft documentation for a funding application.)\n\n-- Draft only. A human must review and send.",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Secure enough funding and investor/mentor support to operate within the stated time budget' (overlap 0.25). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+      }
+    ]
+  },
+  "task-195140199238": {
+    "id": "task-195140199238",
+    "goal_id": "goal-195140199035",
+    "description": "Prepare a checklist for opening a business bank account",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "depends_on": [],
+    "result": "[DRAFT CHECKLIST -- for review]\nTask: Prepare a checklist for opening a business bank account\n1. Gather required documents/info\n2. Confirm requirements with the relevant institution/authority\n3. Assemble step-by-step sequence\n4. Hand off to a human to execute the real-world steps",
+    "audit_passed": true,
+    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE SKEPTIC",
+        "action": "align_check_pass",
+        "detail": "Task ties back to 'Stand up the minimum legal/operational scaffolding to trade legally' (overlap 0.33). No objection."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE INSPECTOR",
+        "action": "routing_check_pass",
+        "detail": "No external-action markers conflicting with classification 'ai_doable'."
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to AI executor pool"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-09T19:51:40+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+      }
+    ]
+  }
+}

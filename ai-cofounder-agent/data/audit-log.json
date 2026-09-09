@@ -1,0 +1,65 @@
+[
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "idea",
+    "message": "Founder approved the idea after validation."
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "halt",
+    "source": "THE SKEPTIC (align-checker)",
+    "subject_id": "task-195140199245",
+    "message": "I don't see how 'Design company swag and merchandise for a future launch party' advances the goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'. Vocabulary overlap is 0.00, below my 0.12 bar. I'm not dropping or rewriting it myself -- flagging for the founder."
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "task-195140199245",
+    "message": "Founder dropped the task after align-check halt."
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "disagreement",
+    "source": "THE INSPECTOR (routing-checker)",
+    "subject_id": "task-195140199206",
+    "message": "Classification says AI-doable, but the task text matches external-action marker(s) ['\\\\bpost\\\\b']. Policy: any real external action or communication is ALWAYS human-required, even if AI drafted the content. Disagreeing with the classifier -- flagging, not fixing."
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-195140199206",
+    "message": "Founder accepted INSPECTOR correction: ai_doable -> human_required"
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "info",
+    "source": "learn",
+    "subject_id": "task-195140199245",
+    "message": "Align-check correctly caught goal-drift on 'Design company swag and merchandise for a future launch party' (founder dropped it). No change needed -- reinforces the current overlap threshold."
+  },
+  {
+    "at": "2026-09-09T19:51:40+00:00",
+    "kind": "info",
+    "source": "learn",
+    "subject_id": "task-195140199206",
+    "message": "Reminder: human task [task-195140199206] 'Post a signup announcement in local Facebook community groups to validate demand' was due 2026-09-06T19:51:40+00:00 and is still 'queued_human'."
+  },
+  {
+    "at": "2026-09-09T19:51:47+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "idea",
+    "message": "Founder requested more analysis: need more detail on competitors"
+  },
+  {
+    "at": "2026-09-09T19:51:47+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "idea",
+    "message": "Founder killed the idea at the validation checkpoint."
+  }
+]

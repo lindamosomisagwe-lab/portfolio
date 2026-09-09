@@ -1,0 +1,31 @@
+{
+  "idea": "We want to launch a subscription box service that rescues surplus and\ncosmetically \"ugly\" produce from local farms and delivers it to households\nin our metro area at a discount, on a recurring weekly basis. The pitch is\nreducing food waste while giving people affordable, fresh produce, riding\nthe growing demand for sustainable food options. Our main risks are\nperishable inventory, unproven demand at this scale, seasonal supply\nfluctuations from farms, and competition from existing grocery delivery\nincumbents.",
+  "plan": {
+    "idea": "We want to launch a subscription box service that rescues surplus and\ncosmetically \"ugly\" produce from local farms and delivers it to households\nin our metro area at a discount, on a recurring weekly basis. The pitch is\nreducing food waste while giving people affordable, fresh produce, riding\nthe growing demand for sustainable food options. Our main risks are\nperishable inventory, unproven demand at this scale, seasonal supply\nfluctuations from farms, and competition from existing grocery delivery\nincumbents.",
+    "resources": "Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns.",
+    "time_budget": "About 15 hours a week each on top of day jobs, more on weekends.",
+    "constraints": "We need real evidence of demand within 6 weeks before either of us quits our day job, and we can't take on debt."
+  },
+  "goals": [
+    {
+      "id": "goal-195140199007",
+      "text": "Validate real demand before committing further resources",
+      "metric": "Concrete evidence of demand (signups, pre-orders, or paid pilots), gathered within: We need real evidence of demand within 6 weeks before either of us quits our day job, and we can't take on debt."
+    },
+    {
+      "id": "goal-195140199028",
+      "text": "Line up the external partners/suppliers the idea depends on",
+      "metric": "Signed or verbally-committed partnerships with named counterparties"
+    },
+    {
+      "id": "goal-195140199032",
+      "text": "Secure enough funding and investor/mentor support to operate within the stated time budget",
+      "metric": "Funding or committed budget sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns."
+    },
+    {
+      "id": "goal-195140199035",
+      "text": "Stand up the minimum legal/operational scaffolding to trade legally",
+      "metric": "Business registration and banking prerequisites identified and queued"
+    }
+  ]
+}
