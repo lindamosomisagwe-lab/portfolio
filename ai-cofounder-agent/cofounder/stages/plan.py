@@ -40,12 +40,12 @@ def run(io: FounderIO, idea_text: str) -> tuple[dict, list[Goal]]:
         Goal(
             id=new_id("goal"),
             text="Secure enough funding and investor/mentor support to operate within the stated time budget",
-            metric=f"Funding or committed budget sufficient given: {resources}",
+            metric=f"Funding, budget, or investor/mentor commitments sufficient given: {resources}",
         ),
         Goal(
             id=new_id("goal"),
-            text="Stand up the minimum legal/operational scaffolding to trade legally",
-            metric="Business registration and banking prerequisites identified and queued",
+            text="Stand up the minimum legal and business-banking scaffolding to trade legally",
+            metric="Business registration and business bank account prerequisites identified and queued",
         ),
     ]
 

@@ -1,7 +1,39 @@
 [
   {
-    "rule": "THE CLASSIFIER marked 'Post a signup announcement in local Facebook community groups to validate demand' ai_doable but it involved a public-channel post; THE INSPECTOR caught it and the founder confirmed the correction. Add 'post'/'publish' to the classifier's own external-action markers so this is caught on the first pass next time, not just at routing-check.",
-    "source": "THE INSPECTOR (routing-checker) override",
-    "added_at": "2026-09-09T19:56:52+00:00"
+    "rule": "Root cause: task(s) [Identify local farms/suppliers that match our sourcing needs; Schedule a call with each shortlisted supplier to discuss terms] are on-topic for their goal but the goal's metric names a closing/final outcome that no task yet targets. Rule: when decomposing a goal whose metric describes a commitment/signature/final state, always include at least one closing task that explicitly targets it -- until then, Checker B's halts on this goal are expected, not a defect.",
+    "source": "Learn cycle @ 2026-09-09T20:26:32.144268+00:00",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "marker_words": [],
+    "added_at": "2026-09-09T20:26:32.167505+00:00"
+  },
+  {
+    "rule": "Root cause: task(s) [Design company swag and merchandise for a future launch party] share no vocabulary with their assigned goal. Rule: before adding a task under a goal, confirm its description shares a concrete noun/verb with the goal text, or route it under a more specific/new goal instead of the nearest existing one.",
+    "source": "Learn cycle @ 2026-09-09T20:26:32.144268+00:00",
+    "pattern": "scope_creep:secure_enough_funding_and_investor_mento",
+    "marker_words": [],
+    "added_at": "2026-09-09T20:26:32.167626+00:00"
+  },
+  {
+    "rule": "Root cause: task(s) [Design company swag and merchandise for a future launch party] are on-topic for their goal but the goal's metric names a closing/final outcome that no task yet targets. Rule: when decomposing a goal whose metric describes a commitment/signature/final state, always include at least one closing task that explicitly targets it -- until then, Checker B's halts on this goal are expected, not a defect.",
+    "source": "Learn cycle @ 2026-09-09T20:26:32.144268+00:00",
+    "pattern": "goal_drift:secure_enough_funding_and_investor_mento",
+    "marker_words": [],
+    "added_at": "2026-09-09T20:26:32.167849+00:00"
+  },
+  {
+    "rule": "Root cause: task(s) [Post a signup announcement in local Facebook community groups to validate demand] are real external actions that THE CLASSIFIER's marker list missed, caught only at routing-check by Checker C/D. Rule: widen THE CLASSIFIER's own external-action markers with ['\\\\bpost\\\\b'] so these are caught at first-pass classification, not just at routing-check.",
+    "source": "Learn cycle @ 2026-09-09T20:26:32.144268+00:00",
+    "pattern": "unclassified_external_action",
+    "marker_words": [
+      "\\bpost\\b"
+    ],
+    "added_at": "2026-09-09T20:26:32.168051+00:00"
+  },
+  {
+    "rule": "Root cause: task(s) [Identify local farms/suppliers that match our sourcing needs; Identify mentors or investors worth contacting] combine a judgment verb (identify/choose/select/worth/evaluate) with a relational noun (mentor/investor/partner/supplier/client) -- a selection judgment, not mechanical drafting -- that THE CLASSIFIER and Checker D both treat as safely ai_doable. Rule: route the SELECTION step of such tasks to human_required; supporting research/drafting can stay AI-doable as a separate task.",
+    "source": "Learn cycle @ 2026-09-09T20:26:32.144268+00:00",
+    "pattern": "unrecognized_judgment_call",
+    "marker_words": [],
+    "added_at": "2026-09-09T20:26:32.168334+00:00"
   }
 ]

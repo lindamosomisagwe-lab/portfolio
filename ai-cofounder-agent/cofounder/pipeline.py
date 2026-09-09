@@ -5,11 +5,13 @@ pipeline picks up at planning."""
 from __future__ import annotations
 
 from .io import FounderIO
+from .models import now
 from .storage import DATA_DIR, Store
 from .stages import align_check, audit, classify, decompose, execute, learn, plan, route, routing_check
 
 
 def run(io: FounderIO, idea_text: str, store: Store) -> None:
+    run_started_at = now()
     print("=== IDEA INTAKE ===")
     print(idea_text)
     store.log("info", "founder", "idea", "Idea submitted; proceeding straight to planning.")
@@ -29,7 +31,7 @@ def run(io: FounderIO, idea_text: str, store: Store) -> None:
     surviving, align_halted = align_check.run(io, tasks, goals, store)
 
     # Stage: classify
-    classified = classify.run(surviving)
+    classified = classify.run(surviving, store)
 
     # Stage: routing check (second, differently-prompted checker)
     routed_tasks, routing_disagreements = routing_check.run(io, classified, store)
@@ -43,8 +45,8 @@ def run(io: FounderIO, idea_text: str, store: Store) -> None:
     # Stage: audit before marking anything done
     ai_tasks = audit.run(ai_tasks, store)
 
-    # Stage: learn + check-in
-    learn.run(store, align_halted, routing_disagreements, human_tasks)
+    # Stage: learn + check-in (real DMAIC, scoped to this cycle's timestamp)
+    learn.run(store, run_started_at, tasks, goals, ai_tasks)
 
     print("\n=== RUN SUMMARY ===")
     print(f"Human queue: {len(human_tasks)} task(s) awaiting a human.")

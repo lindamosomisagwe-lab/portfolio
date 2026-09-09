@@ -1,51 +1,294 @@
 [
   {
-    "at": "2026-09-09T19:56:52+00:00",
+    "at": "2026-09-09T20:26:32.144331+00:00",
     "kind": "info",
     "source": "founder",
     "subject_id": "idea",
-    "message": "Idea submitted; proceeding straight to planning."
+    "message": "Idea submitted; proceeding straight to planning.",
+    "pattern": "",
+    "markers": []
   },
   {
-    "at": "2026-09-09T19:56:52+00:00",
-    "kind": "halt",
-    "source": "THE SKEPTIC (align-checker)",
-    "subject_id": "task-195652188977",
-    "message": "I don't see how 'Design company swag and merchandise for a future launch party' advances the goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'. Vocabulary overlap is 0.00, below my 0.12 bar. I'm not dropping or rewriting it myself -- flagging for the founder."
-  },
-  {
-    "at": "2026-09-09T19:56:52+00:00",
-    "kind": "info",
-    "source": "founder",
-    "subject_id": "task-195652188977",
-    "message": "Founder dropped the task after align-check halt."
-  },
-  {
-    "at": "2026-09-09T19:56:52+00:00",
+    "at": "2026-09-09T20:26:32.145722+00:00",
     "kind": "disagreement",
-    "source": "THE INSPECTOR (routing-checker)",
-    "subject_id": "task-195652188940",
-    "message": "Classification says AI-doable, but the task text matches external-action marker(s) ['\\\\bpost\\\\b']. Policy: any real external action or communication is ALWAYS human-required, even if AI drafted the content. Disagreeing with the classifier -- flagging, not fixing."
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202632144965",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Identify local farms/suppliers that match our sourcing needs' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "markers": []
   },
   {
-    "at": "2026-09-09T19:56:52+00:00",
+    "at": "2026-09-09T20:26:32.146051+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202632144968",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Schedule a call with each shortlisted supplier to discuss terms' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.146750+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER A (scope creep)",
+    "subject_id": "task-202632145198",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- 'Design company swag and merchandise for a future launch party' doesn't read as being about 'Secure enough funding and investor/mentor support to operate within the stated time budget' at all (topic overlap 0.00, below 0.12). Looks like scope creep. | CHECKER B (goal drift): HALT -- 'Design company swag and merchandise for a future launch party' may be on-topic, but I can't see it moving the actual metric 'Funding, budget, or investor/mentor commitments sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns.' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "scope_creep:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.146987+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202632145198",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- 'Design company swag and merchandise for a future launch party' doesn't read as being about 'Secure enough funding and investor/mentor support to operate within the stated time budget' at all (topic overlap 0.00, below 0.12). Looks like scope creep. | CHECKER B (goal drift): HALT -- 'Design company swag and merchandise for a future launch party' may be on-topic, but I can't see it moving the actual metric 'Funding, budget, or investor/mentor commitments sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns.' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.147271+00:00",
     "kind": "override",
     "source": "founder",
-    "subject_id": "task-195652188940",
-    "message": "Founder accepted INSPECTOR correction: ai_doable -> human_required"
+    "subject_id": "task-202632144965",
+    "message": "Founder overrode align-check disagreement and kept the task.",
+    "pattern": "",
+    "markers": []
   },
   {
-    "at": "2026-09-09T19:56:52+00:00",
-    "kind": "info",
-    "source": "learn",
-    "subject_id": "task-195652188977",
-    "message": "Align-check correctly caught goal-drift on 'Design company swag and merchandise for a future launch party' (founder dropped it). No change needed -- reinforces the current overlap threshold."
+    "at": "2026-09-09T20:26:32.147590+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202632144968",
+    "message": "Founder overrode align-check disagreement and kept the task.",
+    "pattern": "",
+    "markers": []
   },
   {
-    "at": "2026-09-09T19:56:52+00:00",
+    "at": "2026-09-09T20:26:32.147913+00:00",
     "kind": "info",
+    "source": "founder",
+    "subject_id": "task-202632145198",
+    "message": "Founder dropped the task after align-check disagreement.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.149513+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-202632144957",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- always human, no exceptions. | CHECKER D (under-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- I agree, that's genuinely human.",
+    "pattern": "unclassified_external_action",
+    "markers": [
+      "\\bpost\\b"
+    ]
+  },
+  {
+    "at": "2026-09-09T20:26:32.149813+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER D (under-automation)",
+    "subject_id": "task-202632144957",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- always human, no exceptions. | CHECKER D (under-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- I agree, that's genuinely human.",
+    "pattern": "unclassified_external_action",
+    "markers": [
+      "\\bpost\\b"
+    ]
+  },
+  {
+    "at": "2026-09-09T20:26:32.150336+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-202632144975",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify mentors or investors worth contacting' asks someone to identify which mentors to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.151019+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-202632144965",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify local farms/suppliers that match our sourcing needs' asks someone to identify which suppliers to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.151410+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202632144957",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> human_required",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.151752+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202632144975",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> ai_doable",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:32.152082+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202632144965",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> human_required",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.980033+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "idea",
+    "message": "Idea submitted; proceeding straight to planning.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.981578+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202646980903",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Identify local farms/suppliers that match our sourcing needs' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.982212+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202646980906",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Schedule a call with each shortlisted supplier to discuss terms' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.983072+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER A (scope creep)",
+    "subject_id": "task-202646981079",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- 'Design company swag and merchandise for a future launch party' doesn't read as being about 'Secure enough funding and investor/mentor support to operate within the stated time budget' at all (topic overlap 0.00, below 0.12). Looks like scope creep. | CHECKER B (goal drift): HALT -- 'Design company swag and merchandise for a future launch party' may be on-topic, but I can't see it moving the actual metric 'Funding, budget, or investor/mentor commitments sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns.' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "scope_creep:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.983463+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-202646981079",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- 'Design company swag and merchandise for a future launch party' doesn't read as being about 'Secure enough funding and investor/mentor support to operate within the stated time budget' at all (topic overlap 0.00, below 0.12). Looks like scope creep. | CHECKER B (goal drift): HALT -- 'Design company swag and merchandise for a future launch party' may be on-topic, but I can't see it moving the actual metric 'Funding, budget, or investor/mentor commitments sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns.' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal.",
+    "pattern": "goal_drift:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.983968+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202646980903",
+    "message": "Founder overrode align-check disagreement and kept the task.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.984372+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202646980906",
+    "message": "Founder overrode align-check disagreement and kept the task.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.984813+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "task-202646981079",
+    "message": "Founder dropped the task after align-check disagreement.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.986955+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-202646980913",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify mentors or investors worth contacting' asks someone to identify which mentors to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.987867+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-202646980903",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify local farms/suppliers that match our sourcing needs' asks someone to identify which suppliers to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.988342+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202646980913",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> ai_doable",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:46.988804+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-202646980903",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> human_required",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:47.017153+00:00",
+    "kind": "control",
     "source": "learn",
-    "subject_id": "task-195652188940",
-    "message": "Reminder: human task [task-195652188940] 'Post a signup announcement in local Facebook community groups to validate demand' was due 2026-09-06T19:56:52+00:00 and is still 'queued_human'."
+    "subject_id": "goal_drift:line_up_the_external_partners_suppliers_",
+    "message": "Rule from 2026-09-09T20:26:32.167505+00:00 ('Root cause: task(s) [Identify local farms/suppliers that match our sourcing needs; Schedul...') did NOT prevent recurrence -- 2 new instance(s) of 'goal_drift:line_up_the_external_partners_suppliers_' this cycle. Leaving OPEN.",
+    "pattern": "goal_drift:line_up_the_external_partners_suppliers_",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:47.017644+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "scope_creep:secure_enough_funding_and_investor_mento",
+    "message": "Rule from 2026-09-09T20:26:32.167626+00:00 ('Root cause: task(s) [Design company swag and merchandise for a future launch party] share ...') did NOT prevent recurrence -- 1 new instance(s) of 'scope_creep:secure_enough_funding_and_investor_mento' this cycle. Leaving OPEN.",
+    "pattern": "scope_creep:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:47.018077+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "goal_drift:secure_enough_funding_and_investor_mento",
+    "message": "Rule from 2026-09-09T20:26:32.167849+00:00 ('Root cause: task(s) [Design company swag and merchandise for a future launch party] are on...') did NOT prevent recurrence -- 1 new instance(s) of 'goal_drift:secure_enough_funding_and_investor_mento' this cycle. Leaving OPEN.",
+    "pattern": "goal_drift:secure_enough_funding_and_investor_mento",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:47.018488+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "unclassified_external_action",
+    "message": "Rule from 2026-09-09T20:26:32.168051+00:00 held -- 0 recurrences of 'unclassified_external_action' this cycle. Marking RESOLVED.",
+    "pattern": "unclassified_external_action",
+    "markers": []
+  },
+  {
+    "at": "2026-09-09T20:26:47.019013+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "unrecognized_judgment_call",
+    "message": "Rule from 2026-09-09T20:26:32.168334+00:00 ('Root cause: task(s) [Identify local farms/suppliers that match our sourcing needs; Identif...') did NOT prevent recurrence -- 2 new instance(s) of 'unrecognized_judgment_call' this cycle. Leaving OPEN.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
   }
 ]

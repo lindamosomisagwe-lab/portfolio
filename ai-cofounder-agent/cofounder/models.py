@@ -7,7 +7,10 @@ from typing import Any
 
 
 def now() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds")
+    # Microsecond precision -- Learn's avg-cycle-time metric needs real
+    # deltas between timestamps, and this run completes in well under a
+    # second, so second-precision would flatten everything to 0.00s.
+    return datetime.now(timezone.utc).isoformat(timespec="microseconds")
 
 
 def new_id(prefix: str) -> str:
@@ -73,10 +76,15 @@ class CheckResult:
 @dataclass
 class AuditLogEntry:
     at: str
-    kind: str            # "halt" | "disagreement" | "override" | "info"
+    kind: str            # "halt" | "disagreement" | "override" | "info" | "control"
     source: str
     subject_id: str
     message: str
+    pattern: str = ""    # root-cause slug, used by Learn to cluster and to
+                          # verify (in Control) whether a past rule held
+    markers: list[str] = field(default_factory=list)  # structured matched
+                          # markers, so Learn can reuse them without
+                          # regex-parsing prose back out of the message
 
     def to_dict(self) -> dict:
         return asdict(self)

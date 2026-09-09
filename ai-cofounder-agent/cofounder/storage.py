@@ -65,9 +65,19 @@ class Store:
     def save_rules(self, rules: list[dict]) -> None:
         _save("checker-rules", rules)
 
-    def add_rule(self, rule_text: str, source: str) -> None:
+    def add_rule(self, rule_text: str, source: str, pattern: str = "", marker_words: list[str] | None = None) -> None:
+        """`pattern` and `marker_words` make the rule machine-actionable:
+        Learn's Control phase matches on `pattern` to check whether a rule
+        held; classify.py reads `marker_words` back out to actually widen
+        THE CLASSIFIER's marker set on the next run."""
         rules = self.load_rules()
-        rules.append({"rule": rule_text, "source": source, "added_at": now()})
+        rules.append({
+            "rule": rule_text,
+            "source": source,
+            "pattern": pattern,
+            "marker_words": marker_words or [],
+            "added_at": now(),
+        })
         self.save_rules(rules)
 
     # -- audit-log ----------------------------------------------------------
@@ -79,5 +89,6 @@ class Store:
         log.append(entry.to_dict())
         _save("audit-log", log)
 
-    def log(self, kind: str, source: str, subject_id: str, message: str) -> None:
-        self.append_audit_log(AuditLogEntry(now(), kind, source, subject_id, message))
+    def log(self, kind: str, source: str, subject_id: str, message: str,
+            pattern: str = "", markers: list[str] | None = None) -> None:
+        self.append_audit_log(AuditLogEntry(now(), kind, source, subject_id, message, pattern, markers or []))

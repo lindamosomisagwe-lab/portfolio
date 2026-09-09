@@ -1,49 +1,73 @@
-"""Stage 8: Routing check -- THE INSPECTOR, a second and differently-
-prompted checker, reviews the classification. On disagreement: HALT that
-task and log it rather than resolving automatically."""
+"""Stage: Routing check -- two independently-prompted checkers review the
+classification:
+
+  CHECKER C (over-automation)  -- flags hard external actions AND
+                                   relational/judgment calls marked ai_doable
+  CHECKER D (under-automation) -- flags nothing but hard external actions;
+                                   otherwise biased toward ai_doable
+
+They are never voted or averaged, against each other or against the doer
+(THE CLASSIFIER's first-pass call). Any disagreement among the three --
+C vs D, C vs classifier, D vs classifier -- HALTS the task and logs the
+specific disagreement. The founder picks the final classification;
+nothing is auto-resolved.
+"""
 from __future__ import annotations
 
 from ..io import FounderIO
 from ..models import Task
-from ..personas import inspector_check_classification
+from ..personas import checker_c_over_automation, checker_d_under_automation
 from ..storage import Store
 
 
 def run(io: FounderIO, tasks: list[Task], store: Store) -> tuple[list[Task], list[Task]]:
-    print("\n=== ROUTING CHECK (THE INSPECTOR) ===")
+    print("\n=== ROUTING CHECK (CHECKER C -- over-automation, CHECKER D -- under-automation) ===")
     disagreements: list[Task] = []
 
     for t in tasks:
-        verdict = inspector_check_classification(t.description, t.classification)
-        print(f"  [{t.id}] {t.description} (classified: {t.classification})")
-        print(f"      -> {verdict.verdict.upper()}: {verdict.reasoning}")
+        c = checker_c_over_automation(t.description)
+        d = checker_d_under_automation(t.description)
 
-        if verdict.verdict == "halt":
-            t.status = "halted"
-            t.log("THE INSPECTOR", "routing_check_disagreement", verdict.reasoning)
-            store.log("disagreement", "THE INSPECTOR (routing-checker)", t.id, verdict.reasoning)
-            disagreements.append(t)
-        else:
-            t.log("THE INSPECTOR", "routing_check_pass", verdict.reasoning)
+        voices = [
+            ("THE CLASSIFIER (doer)", t.classification, t.classification_reason),
+            (c.persona, c.classification, c.reasoning),
+            (d.persona, d.classification, d.reasoning),
+        ]
+        distinct = {v[1] for v in voices}
+
+        print(f"  [{t.id}] {t.description}")
+        for name, classification, reasoning in voices:
+            print(f"      {name}: {classification.upper()} -- {reasoning}")
+
+        if len(distinct) == 1:
+            t.log("routing_check", "unanimous_pass", "Classifier, Checker C, and Checker D all agree.")
+            continue
+
+        disagreement_lines = [f"{name}: {classification.upper()} -- {reasoning}" for name, classification, reasoning in voices]
+        summary = " | ".join(disagreement_lines)
+        print("      -> DISAGREEMENT, not unanimous. Logging as open, not auto-resolving.")
+
+        t.status = "halted"
+        t.log("routing_check", "disagreement", summary)
+        for verdict in (c, d):
+            if verdict.classification != t.classification:
+                store.log("disagreement", verdict.persona, t.id, summary,
+                           pattern=verdict.pattern, markers=verdict.matched_markers)
+        disagreements.append(t)
 
     if disagreements:
         print(f"\n{len(disagreements)} classification disagreement(s). Founder must resolve each.")
         for t in disagreements:
             answer = io.ask(
-                f"Task [{t.id}] '{t.description}': classifier said '{t.classification}', "
-                f"INSPECTOR disagrees and says human_required. Accept the INSPECTOR's correction? (y/n)"
+                f"Task [{t.id}] '{t.description}': checkers disagree (see above). "
+                f"Final classification -- human_required (h) or ai_doable (a)?"
             )
             old = t.classification
-            if answer.strip().lower().startswith("y"):
-                t.classification = "human_required"
-                t.classification_reason = "Corrected by founder after routing-check disagreement: " + \
-                    "involves a real external action, must be human-required."
-                t.status = "aligned"
-                t.log("founder", "override_classification", f"{old} -> human_required")
-                store.log("override", "founder", t.id, f"Founder accepted INSPECTOR correction: {old} -> human_required")
-            else:
-                t.status = "aligned"
-                t.log("founder", "keep_classification", f"Founder kept classification '{old}' despite disagreement.")
-                store.log("override", "founder", t.id, f"Founder overrode INSPECTOR and kept classification '{old}'.")
+            final = "human_required" if answer.strip().lower().startswith("h") else "ai_doable"
+            t.classification = final
+            t.classification_reason = f"Resolved by founder after routing-check disagreement: {final}."
+            t.status = "aligned"
+            t.log("founder", "resolve_routing_disagreement", f"{old} -> {final}")
+            store.log("override", "founder", t.id, f"Founder resolved routing-check disagreement: {old} -> {final}")
 
     return tasks, disagreements

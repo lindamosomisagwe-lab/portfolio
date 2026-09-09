@@ -8,24 +8,24 @@
   },
   "goals": [
     {
-      "id": "goal-195652188595",
+      "id": "goal-202646980615",
       "text": "Validate real demand before committing further resources",
       "metric": "Concrete evidence of demand (signups, pre-orders, or paid pilots), gathered within: We need real evidence of demand within 6 weeks before either of us quits our day job, and we can't take on debt."
     },
     {
-      "id": "goal-195652188737",
+      "id": "goal-202646980642",
       "text": "Line up the external partners/suppliers the idea depends on",
       "metric": "Signed or verbally-committed partnerships with named counterparties"
     },
     {
-      "id": "goal-195652188745",
+      "id": "goal-202646980647",
       "text": "Secure enough funding and investor/mentor support to operate within the stated time budget",
-      "metric": "Funding or committed budget sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns."
+      "metric": "Funding, budget, or investor/mentor commitments sufficient given: Two cofounders (one technical, one operations), about $6,000 in personal savings between us, and a cargo van one of us already owns."
     },
     {
-      "id": "goal-195652188749",
-      "text": "Stand up the minimum legal/operational scaffolding to trade legally",
-      "metric": "Business registration and banking prerequisites identified and queued"
+      "id": "goal-202646980650",
+      "text": "Stand up the minimum legal and business-banking scaffolding to trade legally",
+      "metric": "Business registration and business bank account prerequisites identified and queued"
     }
   ]
 }
