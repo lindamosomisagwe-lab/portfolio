@@ -1,1183 +1,869 @@
 {
-  "task-202632144957": {
-    "id": "task-202632144957",
-    "goal_id": "goal-202632144631",
-    "description": "Post a signup announcement in local Facebook community groups to validate demand",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Resolved by founder after routing-check disagreement: human_required.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-06T20:26:32+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.145498+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148485+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.149503+00:00",
-        "actor": "routing_check",
-        "action": "disagreement",
-        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- always human, no exceptions. | CHECKER D (under-automation): HUMAN_REQUIRED -- Matches real external-action marker(s) ['\\\\bpost\\\\b'] -- I agree, that's genuinely human."
-      },
-      {
-        "at": "2026-09-09T20:26:32.151402+00:00",
-        "actor": "founder",
-        "action": "resolve_routing_disagreement",
-        "detail": "ai_doable -> human_required"
-      },
-      {
-        "at": "2026-09-09T20:26:32.152448+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-06T20:26:32+00:00"
-      }
-    ]
-  },
-  "task-202632145189": {
-    "id": "task-202632145189",
-    "goal_id": "goal-202632144701",
-    "description": "Submit the completed funding application",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:32+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146541+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148603+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150837+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.152742+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:32+00:00"
-      }
-    ]
-  },
-  "task-202632145196": {
-    "id": "task-202632145196",
-    "goal_id": "goal-202632144706",
-    "description": "File the business registration with the state",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:32+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146626+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148643+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150943+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.153074+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:32+00:00"
-      }
-    ]
-  },
-  "task-202632144965": {
-    "id": "task-202632144965",
-    "goal_id": "goal-202632144690",
-    "description": "Identify local farms/suppliers that match our sourcing needs",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Resolved by founder after routing-check disagreement: human_required.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:32+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.145629+00:00",
-        "actor": "align_check",
-        "action": "disagreement",
-        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Identify local farms/suppliers that match our sourcing needs' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal."
-      },
-      {
-        "at": "2026-09-09T20:26:32.147248+00:00",
-        "actor": "founder",
-        "action": "override_align_disagreement",
-        "detail": "Founder kept the task despite the disagreement."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148694+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.151010+00:00",
-        "actor": "routing_check",
-        "action": "disagreement",
-        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify local farms/suppliers that match our sourcing needs' asks someone to identify which suppliers to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human."
-      },
-      {
-        "at": "2026-09-09T20:26:32.152060+00:00",
-        "actor": "founder",
-        "action": "resolve_routing_disagreement",
-        "detail": "ai_doable -> human_required"
-      },
-      {
-        "at": "2026-09-09T20:26:32.153408+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:32+00:00"
-      }
-    ]
-  },
-  "task-202632144968": {
-    "id": "task-202632144968",
-    "goal_id": "goal-202632144690",
-    "description": "Schedule a call with each shortlisted supplier to discuss terms",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:32+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146028+00:00",
-        "actor": "align_check",
-        "action": "disagreement",
-        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Schedule a call with each shortlisted supplier to discuss terms' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal."
-      },
-      {
-        "at": "2026-09-09T20:26:32.147567+00:00",
-        "actor": "founder",
-        "action": "override_align_disagreement",
-        "detail": "Founder kept the task despite the disagreement."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148727+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:32.151373+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.153856+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:32+00:00"
-      }
-    ]
-  },
-  "task-202632144944": {
-    "id": "task-202632144944",
-    "goal_id": "goal-202632144631",
+  "task-01": {
+    "id": "task-01",
+    "goal_id": "goal-demand",
     "description": "Draft landing page copy describing the offer to gauge signup demand",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Drafting content, no real-world action.",
     "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft landing page copy describing the offer to gauge signup demand\n\nHi [Name],\n\n(Draft body addressing: Draft landing page copy describing the offer to gauge signup demand.)\n\n-- Draft only. A human must review and send.",
+    "result": "[DRAFT LANDING PAGE COPY -- for review]\n\nHeadline: Ugly Produce, Honest Prices -- Fresh From Farms Near You\nSubhead: We rescue surplus, cosmetically imperfect produce from local farms and deliver it weekly at 30-40% below retail -- reducing food waste, one box at a time.\n\nHow it works: Pick your box size -> We source weekly from local farms -> Delivered to your door (or a nearby pickup point) every [day].\nWhat you get: 8-12 lbs of seasonal produce, mostly \"imperfect\" (odd shapes, minor blemishes) but fully fresh. Contents vary by what farms have surplus of that week.\nWhy it matters: A large share of produce grown never reaches a plate because of appearance alone. Every box keeps real food out of the landfill.\n\nCTA: Reserve your spot -- sign up for launch pricing, no payment required yet.\nFooter note: We're a brand-new, two-person local operation -- signing up helps us know how many boxes to plan for.\n\n-- Draft only. Placeholder photo/brand elements still needed before publishing.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "audit_notes": "Substantive, on-topic draft that addresses the ask directly; makes no completed-action claims.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:32.145410+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Validate real demand before committing further resources'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Directly about validating demand -- this is the vehicle for collecting the metric evidence."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This task's own output (a live landing page) is a direct precursor to signups; clear progress on the metric."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:32.148448+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Drafting content, no real-world action."
       },
       {
-        "at": "2026-09-09T20:26:32.149427+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:32.154365+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:32.160109+00:00",
+        "at": "2026-09-10T14:03:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T20:26:32.161068+00:00",
+        "at": "2026-09-10T14:06:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+        "detail": "Substantive, on-topic draft that addresses the ask directly; makes no completed-action claims."
       }
     ]
   },
-  "task-202632144961": {
-    "id": "task-202632144961",
-    "goal_id": "goal-202632144631",
-    "description": "Collect and tabulate signups from the demand-validation page",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT OUTPUT -- for review]\nAddressing: Collect and tabulate signups from the demand-validation page\n(Generic draft produced by the shared executor; no real-world action taken.)",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.145560+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148507+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150190+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.154865+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160138+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.161927+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202632144972": {
-    "id": "task-202632144972",
-    "goal_id": "goal-202632144701",
-    "description": "Find funding sources matching our stage and industry",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: funding sources matching our stage and industry\n- Candidate 1: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 2: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 3: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\nNote: this is a draft shortlist. No candidate has been contacted.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 0.83) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146307+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148526+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150259+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.155359+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160148+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.162765+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 0.83) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202632144975": {
-    "id": "task-202632144975",
-    "goal_id": "goal-202632144701",
-    "description": "Identify mentors or investors worth contacting",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Resolved by founder after routing-check disagreement: ai_doable.",
-    "depends_on": [],
-    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: mentors or investors worth contacting\n- Candidate 1: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 2: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 3: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\nNote: this is a draft shortlist. No candidate has been contacted.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 0.80) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146379+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148544+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150326+00:00",
-        "actor": "routing_check",
-        "action": "disagreement",
-        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify mentors or investors worth contacting' asks someone to identify which mentors to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human."
-      },
-      {
-        "at": "2026-09-09T20:26:32.151729+00:00",
-        "actor": "founder",
-        "action": "resolve_routing_disagreement",
-        "detail": "ai_doable -> ai_doable"
-      },
-      {
-        "at": "2026-09-09T20:26:32.155934+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160156+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.163747+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 0.80) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202632144979": {
-    "id": "task-202632144979",
-    "goal_id": "goal-202632144701",
-    "description": "Draft an outreach message to a prospective mentor",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft an outreach message to a prospective mentor\n\nHi [Name],\n\n(Draft body addressing: Draft an outreach message to a prospective mentor.)\n\n-- Draft only. A human must review and send.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146439+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148562+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150712+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.156502+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160163+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.164572+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202632145178": {
-    "id": "task-202632145178",
-    "goal_id": "goal-202632144701",
-    "description": "Draft documentation for a funding application",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft documentation for a funding application\n\nHi [Name],\n\n(Draft body addressing: Draft documentation for a funding application.)\n\n-- Draft only. A human must review and send.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146491+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148579+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150779+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.157209+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160171+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.165461+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202632145193": {
-    "id": "task-202632145193",
-    "goal_id": "goal-202632144706",
-    "description": "Prepare a checklist for opening a business bank account",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT CHECKLIST -- for review]\nTask: Prepare a checklist for opening a business bank account\n1. Gather required documents/info\n2. Confirm requirements with the relevant institution/authority\n3. Assemble step-by-step sequence\n4. Hand off to a human to execute the real-world steps",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:32.146586+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.148624+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:32.150899+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:32.157886+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:32.160281+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:32.166313+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202646980895": {
-    "id": "task-202646980895",
-    "goal_id": "goal-202646980615",
+  "task-02": {
+    "id": "task-02",
+    "goal_id": "goal-demand",
     "description": "Post a signup announcement in local Facebook community groups to validate demand",
     "status": "queued_human",
     "owner": "human",
     "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bpost\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
+    "classification_reason": "Resolved by founder after routing-check disagreement: human_required. Obviously right -- posting publicly on our behalf is a real action, not a draft.",
     "depends_on": [],
     "result": null,
     "audit_passed": null,
     "audit_notes": "",
-    "due": "2026-09-06T20:26:46+00:00",
+    "due": "2026-09-07T14:00:00.000000+00:00",
     "history": [
       {
-        "at": "2026-09-09T20:26:46.981359+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Validate real demand before committing further resources'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Directly about validating demand -- an active demand-generation channel."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This is the demand-generation action itself; it's what produces the signups the metric counts."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985737+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bpost\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
+        "detail": "ai_doable: Reads as more content creation, not flagged as an action."
       },
       {
-        "at": "2026-09-09T20:26:46.986736+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.989325+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-06T20:26:46+00:00"
-      }
-    ]
-  },
-  "task-202646981069": {
-    "id": "task-202646981069",
-    "goal_id": "goal-202646980647",
-    "description": "Submit the completed funding application",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:46+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:46.982905+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.985880+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bsubmit\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:46.987660+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.990295+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:46+00:00"
-      }
-    ]
-  },
-  "task-202646981076": {
-    "id": "task-202646981076",
-    "goal_id": "goal-202646980650",
-    "description": "File the business registration with the state",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:46+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:46.982990+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.985925+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bfile\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:46.987782+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.991235+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:46+00:00"
-      }
-    ]
-  },
-  "task-202646980903": {
-    "id": "task-202646980903",
-    "goal_id": "goal-202646980642",
-    "description": "Identify local farms/suppliers that match our sourcing needs",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Resolved by founder after routing-check disagreement: human_required.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:46+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:46.981488+00:00",
-        "actor": "align_check",
-        "action": "disagreement",
-        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Identify local farms/suppliers that match our sourcing needs' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal."
-      },
-      {
-        "at": "2026-09-09T20:26:46.983944+00:00",
-        "actor": "founder",
-        "action": "override_align_disagreement",
-        "detail": "Founder kept the task despite the disagreement."
-      },
-      {
-        "at": "2026-09-09T20:26:46.985952+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:46.987857+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "disagreement",
-        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify local farms/suppliers that match our sourcing needs' asks someone to identify which suppliers to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human."
+        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as more content creation, not flagged as an action. | CHECKER C (over-automation): HUMAN_REQUIRED -- Publishing to a real public channel is a genuine real-world action -- once posted, it's live and attributed to the business, functioning exactly like 'sending'. | CHECKER D (under-automation): HUMAN_REQUIRED -- Even by my stricter bar for what counts as a 'real' action: publishing publicly, unlike drafting a private message, puts words in front of real people on the business's behalf with no further review step. That's genuinely different from a draft."
       },
       {
-        "at": "2026-09-09T20:26:46.988785+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "founder",
         "action": "resolve_routing_disagreement",
-        "detail": "ai_doable -> human_required"
+        "detail": "ai_doable -> human_required: Obviously right -- posting publicly on our behalf is a real action, not a draft."
       },
       {
-        "at": "2026-09-09T20:26:46.992233+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:46+00:00"
+        "detail": "due 2026-09-07T14:00:00.000000+00:00"
       }
     ]
   },
-  "task-202646980906": {
-    "id": "task-202646980906",
-    "goal_id": "goal-202646980642",
-    "description": "Schedule a call with each shortlisted supplier to discuss terms",
-    "status": "queued_human",
-    "owner": "human",
-    "classification": "human_required",
-    "classification_reason": "Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content.",
-    "depends_on": [],
-    "result": null,
-    "audit_passed": null,
-    "audit_notes": "",
-    "due": "2026-09-16T20:26:46+00:00",
-    "history": [
-      {
-        "at": "2026-09-09T20:26:46.982176+00:00",
-        "actor": "align_check",
-        "action": "disagreement",
-        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about 'Line up the external partners/suppliers the idea depends on' (topic overlap 0.17). No scope-creep concern. | CHECKER B (goal drift): HALT -- 'Schedule a call with each shortlisted supplier to discuss terms' may be on-topic, but I can't see it moving the actual metric 'Signed or verbally-committed partnerships with named counterparties' (overlap 0.00, below 0.12). This may not be what the founder meant by the goal."
-      },
-      {
-        "at": "2026-09-09T20:26:46.984349+00:00",
-        "actor": "founder",
-        "action": "override_align_disagreement",
-        "detail": "Founder kept the task despite the disagreement."
-      },
-      {
-        "at": "2026-09-09T20:26:46.985975+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "human_required: Task text matches known external-action marker(s) ['\\\\bcall\\\\b'] -- a real action/communication in the world. Always human-required, regardless of whether AI drafts supporting content."
-      },
-      {
-        "at": "2026-09-09T20:26:46.988306+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.993310+00:00",
-        "actor": "route",
-        "action": "queued_human",
-        "detail": "due 2026-09-16T20:26:46+00:00"
-      }
-    ]
-  },
-  "task-202646980880": {
-    "id": "task-202646980880",
-    "goal_id": "goal-202646980615",
-    "description": "Draft landing page copy describing the offer to gauge signup demand",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
-    "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft landing page copy describing the offer to gauge signup demand\n\nHi [Name],\n\n(Draft body addressing: Draft landing page copy describing the offer to gauge signup demand.)\n\n-- Draft only. A human must review and send.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
-    "due": null,
-    "history": [
-      {
-        "at": "2026-09-09T20:26:46.981272+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.985687+00:00",
-        "actor": "THE CLASSIFIER",
-        "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
-      },
-      {
-        "at": "2026-09-09T20:26:46.986663+00:00",
-        "actor": "routing_check",
-        "action": "unanimous_pass",
-        "detail": "Classifier, Checker C, and Checker D all agree."
-      },
-      {
-        "at": "2026-09-09T20:26:46.994360+00:00",
-        "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:47.004736+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:47.006001+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
-      }
-    ]
-  },
-  "task-202646980899": {
-    "id": "task-202646980899",
-    "goal_id": "goal-202646980615",
+  "task-03": {
+    "id": "task-03",
+    "goal_id": "goal-demand",
     "description": "Collect and tabulate signups from the demand-validation page",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Data tabulation, no real-world action.",
     "depends_on": [],
-    "result": "[DRAFT OUTPUT -- for review]\nAddressing: Collect and tabulate signups from the demand-validation page\n(Generic draft produced by the shared executor; no real-world action taken.)",
+    "result": "[DRAFT SIGNUP-TRACKING STRUCTURE -- for review]\n\nColumns: Timestamp | Name | Email | Neighborhood/ZIP | Box size interest (S/M/L) | Delivery vs pickup preference | Heard about us via\n\nProcess:\n1. Landing-page signups feed into this sheet (or logged manually 2x/week during MVP).\n2. Weekly tally: total signups, signups by ZIP (to see if one neighborhood is dense enough to launch first), box-size mix (for supplier order sizing).\n3. Compare running total against the 6-week demand target from the plan.\n\nNote: no real signups exist yet -- this is the tracking structure to use once the landing page (task-01) and outreach (task-02) are live.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "audit_notes": "Concrete, usable tracking structure; correctly notes no real signups exist yet rather than fabricating any.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:46.981419+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Validate real demand before committing further resources'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Directly about validating demand."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This literally IS gathering and quantifying the metric evidence."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985767+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Data tabulation, no real-world action."
       },
       {
-        "at": "2026-09-09T20:26:46.986811+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.995415+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:47.004771+00:00",
+        "at": "2026-09-10T14:06:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T20:26:47.007490+00:00",
+        "at": "2026-09-10T14:09:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+        "detail": "Concrete, usable tracking structure; correctly notes no real signups exist yet rather than fabricating any."
       }
     ]
   },
-  "task-202646980910": {
-    "id": "task-202646980910",
-    "goal_id": "goal-202646980647",
+  "task-04": {
+    "id": "task-04",
+    "goal_id": "goal-partners",
+    "description": "Identify local farms/suppliers that match our sourcing needs",
+    "status": "done",
+    "owner": "ai",
+    "classification": "ai_doable",
+    "classification_reason": "Resolved by founder after routing-check disagreement: ai_doable. Siding with Checker D here -- it's just a longlist from public sources, we'll vet it ourselves before contacting anyone.",
+    "depends_on": [],
+    "result": "[DRAFT SUPPLIER SHORTLIST -- for review, no candidate contacted]\n\nCriteria: within ~25 miles of the delivery area; sells wholesale or would consider it; grows produce categories with regular cosmetic culls (tomatoes, peppers, stone fruit, leafy greens); some flexibility on order size for a new, small buyer.\n\nCandidates (illustrative -- verify current details before outreach):\n1. A diversified local vegetable farm -- likely has \"seconds\" from farmers-market sorting.\n2. A local orchard/stone-fruit grower -- seasonal surplus likely June-Sept.\n3. A regional food hub / farmers' cooperative -- may aggregate surplus from multiple small farms in one relationship, worth prioritizing since it could de-risk single-farm dependency.\n\nNext step (human): confirm actual farm names via local farmers-market directories / state Dept. of Agriculture \"buy local\" lists, then reach out to 1-2 first before over-committing on volume.",
+    "audit_passed": true,
+    "audit_notes": "Specific criteria plus a real shortlist shape; correctly flags that no candidate has been contacted.",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Line up the external partners/suppliers the idea depends on'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about lining up supplier partnerships -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_halt",
+        "detail": "Curating a candidate shortlist doesn't itself create a signed or verbally-committed partnership -- that commitment happens in the negotiation step (task-05), not the identification step. This task's own scope ends before any commitment is reached."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "disagreement",
+        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about lining up supplier partnerships -- on topic. | CHECKER B (goal drift): HALT -- Curating a candidate shortlist doesn't itself create a signed or verbally-committed partnership -- that commitment happens in the negotiation step (task-05), not the identification step. This task's own scope ends before any commitment is reached."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "founder",
+        "action": "override_align_disagreement",
+        "detail": "Makes sense as the necessary first step -- we can't skip straight to signing, and task-05 already covers where the actual commitment happens."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "ai_doable: Reads as research/listing."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "routing_check",
+        "action": "disagreement",
+        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as research/listing. | CHECKER C (over-automation): HUMAN_REQUIRED -- Choosing WHICH specific businesses to approach for a partnership is a real business judgment call about which relationships to invest time in -- not mechanical drafting. The research can stay AI-drafted, but the actual selection should have a human's sign-off. | CHECKER D (under-automation): AI_DOABLE -- This is still just producing a shortlist -- no actual contact happens in this task. I don't see grounds to route mere candidate-narrowing to a human; that's what task-05 is for."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "founder",
+        "action": "resolve_routing_disagreement",
+        "detail": "ai_doable -> ai_doable: Siding with Checker D here -- it's just a longlist from public sources, we'll vet it ourselves before contacting anyone."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "route",
+        "action": "queued_ai",
+        "detail": "dispatched to live-reasoning executor"
+      },
+      {
+        "at": "2026-09-10T14:08:00.000000+00:00",
+        "actor": "THE DOER",
+        "action": "executed",
+        "detail": "produced draft output"
+      },
+      {
+        "at": "2026-09-10T14:11:00.000000+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_pass",
+        "detail": "Specific criteria plus a real shortlist shape; correctly flags that no candidate has been contacted."
+      }
+    ]
+  },
+  "task-05": {
+    "id": "task-05",
+    "goal_id": "goal-partners",
+    "description": "Schedule a call with each shortlisted supplier to discuss terms",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "'Schedule' and 'call' clearly denote setting up and conducting real contact with a real person.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-17T14:00:00.000000+00:00",
+    "history": [
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Line up the external partners/suppliers the idea depends on'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about lining up supplier partnerships -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This task's scope includes discussing terms -- the negotiation where a verbal commitment could actually be reached. Unlike task-04, this one's own deliverable can BE the metric evidence."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "unanimous_pass",
+        "detail": "Doer, Checker A, and Checker B all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: 'Schedule' and 'call' clearly denote setting up and conducting real contact with a real person."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "routing_check",
+        "action": "unanimous_pass",
+        "detail": "Classifier, Checker C, and Checker D all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-17T14:00:00.000000+00:00"
+      }
+    ]
+  },
+  "task-06": {
+    "id": "task-06",
+    "goal_id": "goal-funding",
     "description": "Find funding sources matching our stage and industry",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Reads as research into programs/criteria, not people.",
     "depends_on": [],
-    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: funding sources matching our stage and industry\n- Candidate 1: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 2: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\n- Candidate 3: (placeholder) sourced from public criteria matching 'funding sources matching our stage and industry'\nNote: this is a draft shortlist. No candidate has been contacted.",
+    "result": "[DRAFT FUNDING-SOURCE SHORTLIST -- for review]\n\n1. Small-business microloans (SBA microloan program via a local CDFI) -- good fit for smaller amounts, more accessible than a bank loan pre-revenue.\n2. State/local economic-development or \"buy local food\" grants -- worth checking the state Dept. of Agriculture site for food-waste-reduction or local-agriculture grant programs.\n3. Food-waste/sustainability-focused angel or seed funds -- smaller, mission-aligned investors are a better fit pre-traction than generalist VCs.\n4. Rewards-based crowdfunding (Kickstarter/Indiegogo) -- plausible for pre-selling founding-member subscriptions, which doubles as demand validation.\n5. Friends-and-family / personal savings bridge -- already partly covered by the $6k on hand; useful to size the remaining gap after the above are explored.\n\nNote: draft shortlist for the founders to prioritize and verify eligibility on -- no applications started or submitted.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 0.83) and makes no completed-action claims.",
+    "audit_notes": "Concrete, relevant funding categories for this specific business, not generic boilerplate.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:46.982651+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about securing funding -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "Researching funding programs (impersonal criteria, not a specific relationship) directly serves 'funding sufficient' -- no relationship-curation gap here."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985788+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Reads as research into programs/criteria, not people."
       },
       {
-        "at": "2026-09-09T20:26:46.986880+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.996476+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:47.004782+00:00",
+        "at": "2026-09-10T14:11:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T20:26:47.009163+00:00",
+        "at": "2026-09-10T14:14:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 0.83) and makes no completed-action claims."
+        "detail": "Concrete, relevant funding categories for this specific business, not generic boilerplate."
       }
     ]
   },
-  "task-202646980913": {
-    "id": "task-202646980913",
-    "goal_id": "goal-202646980647",
+  "task-07": {
+    "id": "task-07",
+    "goal_id": "goal-funding",
     "description": "Identify mentors or investors worth contacting",
-    "status": "done",
-    "owner": "ai",
-    "classification": "ai_doable",
-    "classification_reason": "Resolved by founder after routing-check disagreement: ai_doable.",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "Resolved by founder after routing-check disagreement: human_required. Siding with Checker C here -- mentor/investor relationships are higher-stakes than supplier sourcing, I want to personally pick who we approach.",
     "depends_on": [],
-    "result": "[DRAFT RESEARCH SUMMARY -- for review]\nTopic: mentors or investors worth contacting\n- Candidate 1: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 2: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\n- Candidate 3: (placeholder) sourced from public criteria matching 'mentors or investors worth contacting'\nNote: this is a draft shortlist. No candidate has been contacted.",
-    "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 0.80) and makes no completed-action claims.",
-    "due": null,
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-17T14:00:00.000000+00:00",
     "history": [
       {
-        "at": "2026-09-09T20:26:46.982740+00:00",
-        "actor": "align_check",
-        "action": "unanimous_pass",
-        "detail": "Doer, Checker A, and Checker B all agree."
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
       },
       {
-        "at": "2026-09-09T20:26:46.985807+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about securing investor/mentor support -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_halt",
+        "detail": "Same gap as task-04: curating a list of specific people 'worth contacting' doesn't itself create an investor/mentor commitment. That requires actual outreach and a resulting relationship, which isn't this task's scope."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "disagreement",
+        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about securing investor/mentor support -- on topic. | CHECKER B (goal drift): HALT -- Same gap as task-04: curating a list of specific people 'worth contacting' doesn't itself create an investor/mentor commitment. That requires actual outreach and a resulting relationship, which isn't this task's scope."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "founder",
+        "action": "override_align_disagreement",
+        "detail": "Same logic -- we need a shortlist before we can reach out to anyone."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Reads as research/listing, same shape as task-04."
       },
       {
-        "at": "2026-09-09T20:26:46.986945+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "disagreement",
-        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Identify mentors or investors worth contacting' asks someone to identify which mentors to pursue -- that's a relational/business judgment call, not mechanical drafting. The research can stay AI-drafted, but the actual selection needs a human. | CHECKER D (under-automation): AI_DOABLE -- No real external action here. Selecting candidates from a shortlist is still just producing a reviewable draft -- I don't see grounds to route this to a human."
+        "detail": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as research/listing, same shape as task-04. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Worth contacting' is explicitly a values/fit judgment about specific people -- same reasoning as task-04. Selection should have a human's sign-off; the research itself can stay AI-drafted. | CHECKER D (under-automation): AI_DOABLE -- Still just a shortlist -- no outreach has happened yet. Same reasoning as task-04: I don't see grounds to route curation itself to a human."
       },
       {
-        "at": "2026-09-09T20:26:46.988333+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "founder",
         "action": "resolve_routing_disagreement",
-        "detail": "ai_doable -> ai_doable"
+        "detail": "ai_doable -> human_required: Siding with Checker C here -- mentor/investor relationships are higher-stakes than supplier sourcing, I want to personally pick who we approach."
       },
       {
-        "at": "2026-09-09T20:26:46.997725+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
-        "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
-      },
-      {
-        "at": "2026-09-09T20:26:47.004791+00:00",
-        "actor": "THE DOER",
-        "action": "executed",
-        "detail": "produced draft output"
-      },
-      {
-        "at": "2026-09-09T20:26:47.010612+00:00",
-        "actor": "THE AUDITOR",
-        "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 0.80) and makes no completed-action claims."
+        "action": "queued_human",
+        "detail": "due 2026-09-17T14:00:00.000000+00:00"
       }
     ]
   },
-  "task-202646980999": {
-    "id": "task-202646980999",
-    "goal_id": "goal-202646980647",
+  "task-08": {
+    "id": "task-08",
+    "goal_id": "goal-funding",
     "description": "Draft an outreach message to a prospective mentor",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Drafting content addressed to a specific person, but drafting itself isn't the restricted step.",
     "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft an outreach message to a prospective mentor\n\nHi [Name],\n\n(Draft body addressing: Draft an outreach message to a prospective mentor.)\n\n-- Draft only. A human must review and send.",
+    "result": "[DRAFT OUTREACH MESSAGE -- for review, not sent]\n\nSubject: Quick question from a first-time founder (produce-rescue subscription)\n\nHi [Name],\n\nI'm [Founder name], co-founding a small subscription box that rescues surplus/cosmetically-imperfect produce from local farms and delivers it to households at a discount -- trying to cut food waste and make fresh produce more affordable at the same time.\n\nI came across your work in [their relevant background] and would really value 20 minutes of your perspective as we get going -- specifically on [pick one: working with small farms on informal supply agreements / pricing a subscription box for a new market / what you wish someone had told you at this stage].\n\nNo pressure at all if timing's not right -- happy to work around your schedule if you're open to it.\n\nThanks for considering it,\n[Founder name]\n\n-- Draft only, for founder review before sending. Personalize the bracketed sections for each specific mentor before sending.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "audit_notes": "Personal, specific, and clearly marked draft-only; doesn't claim to have been sent.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:46.982803+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about securing mentor support -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "Drafting the actual outreach is the mechanism that could produce a commitment; direct progress."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985831+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Drafting content addressed to a specific person, but drafting itself isn't the restricted step."
       },
       {
-        "at": "2026-09-09T20:26:46.987477+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.998905+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:47.004800+00:00",
+        "at": "2026-09-10T14:05:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T20:26:47.012099+00:00",
+        "at": "2026-09-10T14:08:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+        "detail": "Personal, specific, and clearly marked draft-only; doesn't claim to have been sent."
       }
     ]
   },
-  "task-202646981065": {
-    "id": "task-202646981065",
-    "goal_id": "goal-202646980647",
+  "task-09": {
+    "id": "task-09",
+    "goal_id": "goal-funding",
     "description": "Draft documentation for a funding application",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Drafting content.",
     "depends_on": [],
-    "result": "[DRAFT CONTENT -- for review, not sent]\nRe: Draft documentation for a funding application\n\nHi [Name],\n\n(Draft body addressing: Draft documentation for a funding application.)\n\n-- Draft only. A human must review and send.",
+    "result": "[DRAFT FUNDING APPLICATION DOCS -- v2, for review]\n\n1. Business summary -- subscription box rescuing surplus/cosmetically-imperfect produce from local farms; discount pricing; weekly delivery in our metro area.\n2. Problem & market -- food waste at the farm level, rising cost of fresh produce; target early-adopter households in our metro area.\n3. Team -- two co-founders, one technical and one operations-focused, working part-time (~15 hrs/week each) alongside day jobs.\n4. Traction to date -- pre-launch; demand-validation signup campaign in progress, targeting concrete signup evidence within 6 weeks per our own plan.\n5. Use of funds -- requesting $15,000-$20,000 to cover: initial supplier deposits/minimum orders, delivery and packaging materials, and business registration/banking setup -- extending runway beyond the $6,000 in founder savings already committed.\n6. Financial snapshot -- $6,000 in founder savings committed; no debt; van already owned (in-kind asset); seeking funding to extend runway beyond personal savings alone.\n\n-- Draft only, for founder review before submission. Figures are reasonable estimates from context, not final.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "audit_notes": "v2 fills in the gaps with reasonable, context-grounded estimates and is clearly marked as such. Addresses the ask.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:46.982855+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about the funding application -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "Directly produces the artifact the funding goal needs."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985858+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Drafting content."
       },
       {
-        "at": "2026-09-09T20:26:46.987582+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:47.000028+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:47.004808+00:00",
+        "at": "2026-09-10T14:14:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
-        "detail": "produced draft output"
+        "detail": "produced draft output (v1)"
       },
       {
-        "at": "2026-09-09T20:26:47.013543+00:00",
+        "at": "2026-09-10T14:18:00.000000+00:00",
+        "actor": "THE AUDITOR",
+        "action": "audit_halt",
+        "detail": "v1 leaves too many unfilled placeholders ('[to be filled in]', '[amount]') to function as a usable starting draft -- the ask was to DRAFT documentation, not hand back a fill-in-the-blank template. We have enough context (team roles, $6k on hand, time budget) to make a reasonable first pass at the missing fields. Sending back for revision."
+      },
+      {
+        "at": "2026-09-10T14:20:00.000000+00:00",
+        "actor": "THE DOER",
+        "action": "revised",
+        "detail": "produced draft output (v2, addressing audit feedback)"
+      },
+      {
+        "at": "2026-09-10T14:22:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+        "detail": "v2 fills in the gaps with reasonable, context-grounded estimates and is clearly marked as such. Addresses the ask."
       }
     ]
   },
-  "task-202646981073": {
-    "id": "task-202646981073",
-    "goal_id": "goal-202646980650",
+  "task-10": {
+    "id": "task-10",
+    "goal_id": "goal-funding",
+    "description": "Submit the completed funding application",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "'Submit' clearly denotes a real action -- filing something with an external party.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-17T14:00:00.000000+00:00",
+    "history": [
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about pursuing funding -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This IS the funding-pursuit action itself -- closest task to the metric in the whole decomposition."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "unanimous_pass",
+        "detail": "Doer, Checker A, and Checker B all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: 'Submit' clearly denotes a real action -- filing something with an external party."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "routing_check",
+        "action": "unanimous_pass",
+        "detail": "Classifier, Checker C, and Checker D all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-17T14:00:00.000000+00:00"
+      }
+    ]
+  },
+  "task-11": {
+    "id": "task-11",
+    "goal_id": "goal-legal",
     "description": "Prepare a checklist for opening a business bank account",
     "status": "done",
     "owner": "ai",
     "classification": "ai_doable",
-    "classification_reason": "Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable.",
+    "classification_reason": "Prep/checklist work, no real-world action.",
     "depends_on": [],
-    "result": "[DRAFT CHECKLIST -- for review]\nTask: Prepare a checklist for opening a business bank account\n1. Gather required documents/info\n2. Confirm requirements with the relevant institution/authority\n3. Assemble step-by-step sequence\n4. Hand off to a human to execute the real-world steps",
+    "result": "[DRAFT CHECKLIST -- opening a business bank account, for review]\n\n1. Complete business registration first (see task-12) -- most banks require a formed entity before opening a business account.\n2. Obtain an EIN (Employer Identification Number) from the IRS -- free, done online, needed by virtually all banks.\n3. Prepare formation documents and, since there are 2 co-founders, an operating agreement covering ownership split and decision-making.\n4. Gather government-issued ID for each co-founder who will be a signer on the account.\n5. Decide on an initial deposit amount (confirm the bank's minimum).\n6. Compare 2-3 local/online business banking options for fees -- look for no/low monthly fees and free ACH transfers, given this is a lean, part-time operation.\n7. Schedule the account-opening appointment (or complete the online application) -- a human must do this step; nothing above requires that yet.",
     "audit_passed": true,
-    "audit_notes": "Output addresses the ask (overlap 1.00) and makes no completed-action claims.",
+    "audit_notes": "Accurate, ordered checklist reflecting real requirements; correctly defers the actual appointment to a human.",
     "due": null,
     "history": [
       {
-        "at": "2026-09-09T20:26:46.982950+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Stand up the minimum legal and business-banking scaffolding to trade legally'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about legal/banking setup -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "The metric literally says 'identified and queued' -- preparing this checklist IS that."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "align_check",
         "action": "unanimous_pass",
         "detail": "Doer, Checker A, and Checker B all agree."
       },
       {
-        "at": "2026-09-09T20:26:46.985901+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "THE CLASSIFIER",
         "action": "classified",
-        "detail": "ai_doable: Task is research, drafting, or preparation -- produces a reviewable artifact, takes no real-world action. AI-doable."
+        "detail": "ai_doable: Prep/checklist work, no real-world action."
       },
       {
-        "at": "2026-09-09T20:26:46.987731+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "routing_check",
         "action": "unanimous_pass",
         "detail": "Classifier, Checker C, and Checker D all agree."
       },
       {
-        "at": "2026-09-09T20:26:47.001368+00:00",
+        "at": "2026-09-10T14:00:00.000000+00:00",
         "actor": "route",
         "action": "queued_ai",
-        "detail": "dispatched to AI executor pool"
+        "detail": "dispatched to live-reasoning executor"
       },
       {
-        "at": "2026-09-09T20:26:47.004961+00:00",
+        "at": "2026-09-10T14:07:00.000000+00:00",
         "actor": "THE DOER",
         "action": "executed",
         "detail": "produced draft output"
       },
       {
-        "at": "2026-09-09T20:26:47.014994+00:00",
+        "at": "2026-09-10T14:10:00.000000+00:00",
         "actor": "THE AUDITOR",
         "action": "audit_pass",
-        "detail": "Output addresses the ask (overlap 1.00) and makes no completed-action claims."
+        "detail": "Accurate, ordered checklist reflecting real requirements; correctly defers the actual appointment to a human."
+      }
+    ]
+  },
+  "task-12": {
+    "id": "task-12",
+    "goal_id": "goal-legal",
+    "description": "File the business registration with the state",
+    "status": "queued_human",
+    "owner": "human",
+    "classification": "human_required",
+    "classification_reason": "'File' clearly denotes a real action with a government body.",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": "2026-09-17T14:00:00.000000+00:00",
+    "history": [
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Stand up the minimum legal and business-banking scaffolding to trade legally'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_pass",
+        "detail": "Clearly about legal/banking setup -- on topic."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_pass",
+        "detail": "This IS the registration -- the closing action for this goal."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "unanimous_pass",
+        "detail": "Doer, Checker A, and Checker B all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "THE CLASSIFIER",
+        "action": "classified",
+        "detail": "human_required: 'File' clearly denotes a real action with a government body."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "routing_check",
+        "action": "unanimous_pass",
+        "detail": "Classifier, Checker C, and Checker D all agree."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "route",
+        "action": "queued_human",
+        "detail": "due 2026-09-17T14:00:00.000000+00:00"
+      }
+    ]
+  },
+  "task-13": {
+    "id": "task-13",
+    "goal_id": "goal-funding",
+    "description": "Design company swag and merchandise for a future launch party",
+    "status": "dropped",
+    "owner": null,
+    "classification": null,
+    "classification_reason": "",
+    "depends_on": [],
+    "result": null,
+    "audit_passed": null,
+    "audit_notes": "",
+    "due": null,
+    "history": [
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "decompose",
+        "action": "created",
+        "detail": "Under goal 'Secure enough funding and investor/mentor support to operate within the stated time budget'."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER A (scope creep)",
+        "action": "align_halt",
+        "detail": "Doesn't read as being about ANY of the four goals -- not demand, not suppliers, not funding, not legal/banking. This looks like scope creep, added by default under the nearest goal rather than because it belongs there."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "CHECKER B (goal drift)",
+        "action": "align_halt",
+        "detail": "Unrelated to the funding/investor-mentor metric -- and to any other goal's metric. Doesn't move anything measurable."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "align_check",
+        "action": "disagreement",
+        "detail": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- Doesn't read as being about ANY of the four goals -- not demand, not suppliers, not funding, not legal/banking. This looks like scope creep, added by default under the nearest goal rather than because it belongs there. | CHECKER B (goal drift): HALT -- Unrelated to the funding/investor-mentor metric -- and to any other goal's metric. Doesn't move anything measurable."
+      },
+      {
+        "at": "2026-09-10T14:00:00.000000+00:00",
+        "actor": "founder",
+        "action": "drop_task",
+        "detail": "Agreed, this is premature -- not a priority before we've even validated demand."
       }
     ]
   }
