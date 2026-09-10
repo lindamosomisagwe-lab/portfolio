@@ -1,0 +1,40 @@
+[
+  {
+    "rule": "Root cause: task-04 ('Identify local farms/suppliers...') curates a shortlist of specific counterparties, which doesn't itself create a signed/verbally-committed partnership -- that commitment happens in the negotiation-scoped task (task-05), which already exists in this decomposition. Rule: Checker B should keep flagging curation-only tasks like this one -- it's correct signal that THIS task specifically doesn't move the metric, not evidence the goal is missing a closing task.",
+    "source": "Learn cycle @ 2026-09-10T14:00:00.000000+00:00",
+    "pattern": "goal_drift:goal-partners",
+    "marker_words": [],
+    "added_at": "2026-09-10T14:00:00.000000+00:00"
+  },
+  {
+    "rule": "Root cause: two different failure modes land in this bucket. (a) task-07 ('Identify mentors/investors...') is a legitimate curation-not-commitment gap, same shape as goal-partners above. (b) task-13 (company swag) is genuinely unrelated and also got caught here because it happens to fail the metric-overlap check too. Rule: when reviewing this pattern, check whether Checker A ALSO flagged the same task (scope_creep) -- if so, the task is just off-topic and the fix is to drop it, not to add a closing task.",
+    "source": "Learn cycle @ 2026-09-10T14:00:00.000000+00:00",
+    "pattern": "goal_drift:goal-funding",
+    "marker_words": [],
+    "added_at": "2026-09-10T14:00:00.000000+00:00"
+  },
+  {
+    "rule": "Root cause: task-13 (company swag) is unrelated to its assigned goal's topic -- it was decomposed under the nearest existing goal by default rather than because it belongs there. Rule: tasks unrelated to their assigned goal's topic should be re-homed under a correct goal or dropped, not defaulted into the nearest one.",
+    "source": "Learn cycle @ 2026-09-10T14:00:00.000000+00:00",
+    "pattern": "scope_creep:goal-funding",
+    "marker_words": [],
+    "added_at": "2026-09-10T14:00:00.000000+00:00"
+  },
+  {
+    "rule": "Root cause: task-02 ('Post a signup announcement...') is a real external action (publishing to a public channel) that THE CLASSIFIER's first-pass marker list missed, reading it as ordinary content drafting. Rule: widen THE CLASSIFIER's own external-action markers with post/publish so this is caught at first-pass classification, not just at routing-check.",
+    "source": "Learn cycle @ 2026-09-10T14:00:00.000000+00:00",
+    "pattern": "unclassified_external_action",
+    "marker_words": [
+      "\\bpost\\b",
+      "\\bpublish\\b"
+    ],
+    "added_at": "2026-09-10T14:00:00.000000+00:00"
+  },
+  {
+    "rule": "Root cause: task-04 and task-07 both curate WHICH specific people/organizations to pursue -- a genuine relationship judgment call, not mechanical listing -- that THE CLASSIFIER treats as ai_doable by default. Rule: route the selection step of such tasks to human_required by default; the underlying research can stay AI-drafted as a separate task. Note: the founder didn't apply this consistently this cycle -- kept task-04 (suppliers) as ai_doable but required task-07 (mentors/investors) as human_required, on the reasoning that mentor/investor relationships are higher-stakes. Worth surfacing back to the founder as a real inconsistency to resolve on purpose, not by accident, next time this pattern comes up.",
+    "source": "Learn cycle @ 2026-09-10T14:00:00.000000+00:00",
+    "pattern": "unrecognized_judgment_call",
+    "marker_words": [],
+    "added_at": "2026-09-10T14:00:00.000000+00:00"
+  }
+]

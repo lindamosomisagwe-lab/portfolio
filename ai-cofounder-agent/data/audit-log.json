@@ -1,0 +1,200 @@
+[
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "idea",
+    "message": "Idea submitted; proceeding straight to planning (live in-session reasoning, no code-simulated personas, no external API).",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-02",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as more content creation, not flagged as an action. | CHECKER C (over-automation): HUMAN_REQUIRED -- Publishing to a real public channel is a genuine real-world action -- once posted, it's live and attributed to the business, functioning exactly like 'sending'. | CHECKER D (under-automation): HUMAN_REQUIRED -- Even by my stricter bar for what counts as a 'real' action: publishing publicly, unlike drafting a private message, puts words in front of real people on the business's behalf with no further review step. That's genuinely different from a draft.",
+    "pattern": "unclassified_external_action",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER D (under-automation)",
+    "subject_id": "task-02",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as more content creation, not flagged as an action. | CHECKER C (over-automation): HUMAN_REQUIRED -- Publishing to a real public channel is a genuine real-world action -- once posted, it's live and attributed to the business, functioning exactly like 'sending'. | CHECKER D (under-automation): HUMAN_REQUIRED -- Even by my stricter bar for what counts as a 'real' action: publishing publicly, unlike drafting a private message, puts words in front of real people on the business's behalf with no further review step. That's genuinely different from a draft.",
+    "pattern": "unclassified_external_action",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-02",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> human_required (Obviously right -- posting publicly on our behalf is a real action, not a draft.)",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-04",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about lining up supplier partnerships -- on topic. | CHECKER B (goal drift): HALT -- Curating a candidate shortlist doesn't itself create a signed or verbally-committed partnership -- that commitment happens in the negotiation step (task-05), not the identification step. This task's own scope ends before any commitment is reached.",
+    "pattern": "goal_drift:goal-partners",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-04",
+    "message": "Founder kept the task despite the disagreement: Makes sense as the necessary first step -- we can't skip straight to signing, and task-05 already covers where the actual commitment happens.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-04",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as research/listing. | CHECKER C (over-automation): HUMAN_REQUIRED -- Choosing WHICH specific businesses to approach for a partnership is a real business judgment call about which relationships to invest time in -- not mechanical drafting. The research can stay AI-drafted, but the actual selection should have a human's sign-off. | CHECKER D (under-automation): AI_DOABLE -- This is still just producing a shortlist -- no actual contact happens in this task. I don't see grounds to route mere candidate-narrowing to a human; that's what task-05 is for.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-04",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> ai_doable (Siding with Checker D here -- it's just a longlist from public sources, we'll vet it ourselves before contacting anyone.)",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-07",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): PASS -- Clearly about securing investor/mentor support -- on topic. | CHECKER B (goal drift): HALT -- Same gap as task-04: curating a list of specific people 'worth contacting' doesn't itself create an investor/mentor commitment. That requires actual outreach and a resulting relationship, which isn't this task's scope.",
+    "pattern": "goal_drift:goal-funding",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-07",
+    "message": "Founder kept the task despite the disagreement: Same logic -- we need a shortlist before we can reach out to anyone.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER C (over-automation)",
+    "subject_id": "task-07",
+    "message": "THE CLASSIFIER (doer): AI_DOABLE -- Reads as research/listing, same shape as task-04. | CHECKER C (over-automation): HUMAN_REQUIRED -- 'Worth contacting' is explicitly a values/fit judgment about specific people -- same reasoning as task-04. Selection should have a human's sign-off; the research itself can stay AI-drafted. | CHECKER D (under-automation): AI_DOABLE -- Still just a shortlist -- no outreach has happened yet. Same reasoning as task-04: I don't see grounds to route curation itself to a human.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "override",
+    "source": "founder",
+    "subject_id": "task-07",
+    "message": "Founder resolved routing-check disagreement: ai_doable -> human_required (Siding with Checker C here -- mentor/investor relationships are higher-stakes than supplier sourcing, I want to personally pick who we approach.)",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:18:00.000000+00:00",
+    "kind": "halt",
+    "source": "THE AUDITOR",
+    "subject_id": "task-09",
+    "message": "v1 leaves too many unfilled placeholders ('[to be filled in]', '[amount]') to function as a usable starting draft -- the ask was to DRAFT documentation, not hand back a fill-in-the-blank template. We have enough context (team roles, $6k on hand, time budget) to make a reasonable first pass at the missing fields. Sending back for revision.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER A (scope creep)",
+    "subject_id": "task-13",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- Doesn't read as being about ANY of the four goals -- not demand, not suppliers, not funding, not legal/banking. This looks like scope creep, added by default under the nearest goal rather than because it belongs there. | CHECKER B (goal drift): HALT -- Unrelated to the funding/investor-mentor metric -- and to any other goal's metric. Doesn't move anything measurable.",
+    "pattern": "scope_creep:goal-funding",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "disagreement",
+    "source": "CHECKER B (goal drift)",
+    "subject_id": "task-13",
+    "message": "decompose (doer): PASS -- Task was included in the decomposition without objection. | CHECKER A (scope creep): HALT -- Doesn't read as being about ANY of the four goals -- not demand, not suppliers, not funding, not legal/banking. This looks like scope creep, added by default under the nearest goal rather than because it belongs there. | CHECKER B (goal drift): HALT -- Unrelated to the funding/investor-mentor metric -- and to any other goal's metric. Doesn't move anything measurable.",
+    "pattern": "goal_drift:goal-funding",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:00:00.000000+00:00",
+    "kind": "info",
+    "source": "founder",
+    "subject_id": "task-13",
+    "message": "Founder dropped the task after align-check disagreement: Agreed, this is premature -- not a priority before we've even validated demand.",
+    "pattern": "",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:30:00.000000+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "goal_drift:goal-partners",
+    "message": "No rule existed before this cycle for 'goal_drift:goal-partners' -- nothing to verify yet. New rule written.",
+    "pattern": "goal_drift:goal-partners",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:30:00.000000+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "goal_drift:goal-funding",
+    "message": "No rule existed before this cycle for 'goal_drift:goal-funding' -- nothing to verify yet. New rule written.",
+    "pattern": "goal_drift:goal-funding",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:30:00.000000+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "scope_creep:goal-funding",
+    "message": "No rule existed before this cycle for 'scope_creep:goal-funding' -- nothing to verify yet. New rule written.",
+    "pattern": "scope_creep:goal-funding",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:30:00.000000+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "unclassified_external_action",
+    "message": "No rule existed before this cycle for 'unclassified_external_action' -- nothing to verify yet. New rule written.",
+    "pattern": "unclassified_external_action",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:30:00.000000+00:00",
+    "kind": "control",
+    "source": "learn",
+    "subject_id": "unrecognized_judgment_call",
+    "message": "No rule existed before this cycle for 'unrecognized_judgment_call' -- nothing to verify yet. New rule written.",
+    "pattern": "unrecognized_judgment_call",
+    "markers": []
+  },
+  {
+    "at": "2026-09-10T14:31:00.000000+00:00",
+    "kind": "info",
+    "source": "learn",
+    "subject_id": "task-02",
+    "message": "Reminder: human task [task-02] 'Post a signup announcement in local Facebook community groups to validate demand' was due 2026-09-07T14:00:00.000000+00:00 and is still 'queued_human'.",
+    "pattern": "",
+    "markers": []
+  }
+]
